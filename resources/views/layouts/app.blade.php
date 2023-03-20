@@ -202,10 +202,10 @@
                     <ul class="d-flex list-inline">
                         <li><a href="/" class="navbar-brand"> Home </a></li> &nbsp;|&nbsp;
                         <li><a href="/terms" class="navbar-brand"> Terms </a></li> &nbsp;|&nbsp;
-                        <li><a href="/disclosures" class="navbar-brand"> Disclosures </a></li>
-                        <li><a href="/privacy-policy" class="navbar-brand"> Privacy Policy </a></li> &nbsp;|&nbsp;
+                        <li><a href="/disclosures" class="navbar-brand"> Disclosures </a></li> &nbsp;|&nbsp;
+                        <li><a href="/privacy-policy" class="navbar-brand"> Privacy Policy </a></li>
                     </ul>
-                    <ul class="d-flex list-inline">
+                    <ul class="d-flex float-end list-inline">
                         <li>Website Design By Shehzad Khan</li> &nbsp;|&nbsp;
                         <li>&copy; 2023 All Right Reserved</li>
                     </ul>
