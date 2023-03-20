@@ -181,31 +181,31 @@
         <footer class="py-4">
             <div class="container-fluid">
                 <div class="row pt-5 bg-dark text-white">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         LOGO
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <h5>IT'S NEVER TOO LATE</h5>
                         <p>Sign up to the market ladder today, and start your journey to stock market success!</p>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <h5>CONTACT</h5>
                         <p>Send your questions or comments to info@themarketladder.com</p>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <h5>NOTICE</h5>
                         <p>Stock Market Trades and Commentary shown by The Market Ladder, LLC, are for informational
                             purposes only, and should not be considered Investment advice.</p>
                     </div>
                 </div>
-                <div class="row pt-5 text-white bg-black opacity-75">
-                    <ul class="d-flex list-inline">
+                <div class="row pt-5 text-white justify-content-between bg-black opacity-75">
+                    <ul class="col-6 d-flex list-inline">
                         <li><a href="/" class="navbar-brand"> Home </a></li> &nbsp;|&nbsp;
                         <li><a href="/terms" class="navbar-brand"> Terms </a></li> &nbsp;|&nbsp;
                         <li><a href="/disclosures" class="navbar-brand"> Disclosures </a></li> &nbsp;|&nbsp;
                         <li><a href="/privacy-policy" class="navbar-brand"> Privacy Policy </a></li>
                     </ul>
-                    <ul class="d-flex float-end list-inline">
+                    <ul class="col-6 d-flex justify-content-end list-inline">
                         <li>Website Design By Shehzad Khan</li> &nbsp;|&nbsp;
                         <li>&copy; 2023 All Right Reserved</li>
                     </ul>
