@@ -23,4 +23,22 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row w-100">
+            <div class="col-md-4 p-5">
+                <h1 class="fw-bold">What is the Market Ladder?</h1>
+                <p class="text-gray fw-light">The Goal of The Market Ladder is to help the individual investor to grow their investments with the best
+                    possible swing trades. Here, we will show you exactly how to take swing trades in stocks, and/or etfs.
+                    <br>
+                    <br>
+                    We provide the very best possible trades for the individual investor. Every Trade is carefully analyzed
+                    to make sure it is showing a good risk/reward ratio through technical analysis.
+                </p>
+                <button class="btn btn-danger">About Us</button>
+            </div>
+            <div class="col-md-8 p-0 m-0">
+                <img width="102.6%" src="{{ url('/images/rhino.png') }}"
+                    alt="Rhino Image"></div>
+        </div>
+    </div>
 @endsection
