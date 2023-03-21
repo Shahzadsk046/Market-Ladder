@@ -54,12 +54,13 @@
                 </ul>
             </div>
             <div class="col-md-4 border border-top-0 d-flex flex-column">
-                <i class="t fs-3 text-center" style="color:red"></i>
+                <i class="fas fa-tachometer-alt fs-3 text-center" style="color:red"></i>
                 <h3 class="text-center">Trades</h3>
                 <ul class=" list">
                     <li>Trading ideas are posted regularly, take the trades you want.</li>
                     <li>Each trade is broken down into its basic components, so you know exactly when to buy, and sell.</li>
-                    <li>By keeping your money in *High Profitability Trades, you have the potential to far outperform standard market returns.</li>
+                    <li>By keeping your money in *High Profitability Trades, you have the potential to far outperform
+                        standard market returns.</li>
                 </ul>
             </div>
             <div class="col-md-4 border border-top-0 d-flex flex-column">
@@ -72,6 +73,13 @@
                         Trial for first timer Subscribers</li>
                     <li><span class="fa-li"><i class="fas fa-hand-point-right"></i></span>Learn More about the Market
                         Ladder</li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <ul>
+                    <li>"High Profitability Trades" - Every trade has been analyzed to give a win potential of at least 2 times
+                    the loss potential, and an expected win rate of at least 50%. Of course, no trades are guaranteed, and
+                    you may lose money.</li>
                 </ul>
             </div>
         </div>
