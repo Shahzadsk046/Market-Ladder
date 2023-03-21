@@ -1,11 +1,11 @@
-.ladder{
+.ladder {
     position: relative;
     top: 0;
     left: 0;
     font-size: 1rem;
 }
 
-.logo{
+.logo {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -13,7 +13,7 @@
     margin-top: 10% !important; */
 }
 
-.text-image{
+.text-image {
     position: absolute;
     top: 40%;
     left: 45%;
@@ -21,21 +21,21 @@
     color: black;
 }
 
-.market-goal{
+.market-goal {
     font-size: 150%;
 }
 
-.testimonial ul > li{
+.testimonial ul>li {
     list-style-type: square;
     font-size: 18px;
     margin: 10px 0;
 }
 
-.testimonial div > i {
+.testimonial div>i {
     margin: 10 auto;
 }
 
-.join{
+.join {
     height: 400px;
     background: url("/images/balloon.png");
     background-repeat: no-repeat;
@@ -43,9 +43,42 @@
     background-position: center;
 }
 
-.join > h1{
+.join>h1 {
     padding: 20px 0;
     font-size: 4rem;
     color: white;
 
+}
+
+
+.reading {
+    height: 450px;
+    max-width: 100%;
+    background: url("/images/colorballoon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.reading .col-md-3 {
+    /* width: 100%; */
+    /* text-align: right; */
+    padding-left: 65px;
+    height: 450px;
+    margin-top: -16px;
+    padding-top: 20px;
+    background: white;
+}
+
+.dropend .btn {
+    width: 270px;
+    text-align: left;
+}
+
+.dropend>.btn:focus {
+    background-color: red;
+}
+
+.dropdown-menu li {
+    width: 350px !important;
 }

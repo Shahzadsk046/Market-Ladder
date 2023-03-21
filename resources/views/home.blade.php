@@ -77,9 +77,11 @@
             </div>
             <div class="col-md-12">
                 <ul>
-                    <li>"High Profitability Trades" - Every trade has been analyzed to give a win potential of at least 2 times
-                    the loss potential, and an expected win rate of at least 50%. Of course, no trades are guaranteed, and
-                    you may lose money.</li>
+                    <li>"High Profitability Trades" - Every trade has been analyzed to give a win potential of at least 2
+                        times
+                        the loss potential, and an expected win rate of at least 50%. Of course, no trades are guaranteed,
+                        and
+                        you may lose money.</li>
                 </ul>
             </div>
         </div>
@@ -89,13 +91,51 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h1>If You Want To See Technical Analysis In Action...</h1>
-                    <img class="img-fluid w-100 shadow" src="{{url('/images/video.png')}}" alt="">
+                    <img class="img-fluid w-100 shadow" src="{{ url('/images/video.png') }}" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <section class="join my-3 py-5 text-center fs-1">
+    <section class="join my-3 py-5 text-center">
         <h1 class="fw-bold text-uppercase">DON'T LET YOUR MONEY GET STAGNANT, GET THE TOOLS YOU NEED TO SUCCEED!</h1>
         <button class="btn btn-dark">JOIN NOW</button>
+    </section>
+
+    <section class="reading my-3 py-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Recommended Reading to get the Most of The Market Ladder:</h3>
+                    <div class="dropend">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-play"></i> 1) The Compounding Advantage
+                        </button>
+                        <ul class="dropdown-menu fa-ul">
+                            <li class="px-4 m-2 w-100">
+                                <h3>Compounding Magic</h3>
+                                <p>A lot of types of investments have a very special "growth agent" known as Compound Interest. This is where the interest earned on the account adds to the principal, and then starts to generate its own interest. And the longer this process continues, the more it has the rolling snowball effect.... Hence the term <strong style="background-color: lightgreen">"Compunding Magic."</strong></p>
+                                <a href="#" class="unstyle">Read Full Page</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-play"></i> 2) Swing Trading Stocks
+                        </button>
+                        <ul class="dropdown-menu fa-ul">
+                            <li class="px-4 m-2 w-100">Swing Trading Stocks</li>
+                        </ul>
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-play"></i> 3) Swing Trading with ETFs
+                        </button>
+                        <ul class="dropdown-menu fa-ul">
+                            <li class="px-4 m-2 w-100">Swing Trading with ETFs</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-9">
+
+                </div>
+            </div>
+        </div>
     </section>
 @endsection
