@@ -38,4 +38,4 @@ Route::view('/register','auth/register')->name('register');
 Route::view('/join-now','join-now')->name('join-now');
 Auth::routes();
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');

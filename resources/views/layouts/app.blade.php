@@ -14,6 +14,31 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <style>
+        .navbar {
+            /* margin: 0 auto !important; */
+            /*center the element*/
+            width: 100% !important;
+            /* display: flex !important; */
+            /* customize width you want */
+        }
+
+        .navbar-nav {
+            flex: 1;
+            margin: auto !important;
+            display: flex;
+            flex: 2;
+            align-items: flex-end;
+            /* width: 100% !important; */
+            padding-left: 10% !important;
+            /* justify-content: space-between; */
+        }
+
+        .navbar .container {
+            /*overwrite bootstrap style*/
+            width: 100% !important;
+            margin: 0;
+        }
+
         .active {
             color: green !important;
             border-bottom: 2px solid green !important;
@@ -29,7 +54,8 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'The Market Ladder') }}
+                    <img src="{{ url('/images/logo.png') }}" alt="The Market Ladder">
+                    {{-- {{ config('app.name', 'The Market Ladder') }} --}}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -167,8 +193,8 @@
                                         @csrf
                                     </form>
                                 </div>
-                            </li> --}}
-                        {{-- @endguest --}}
+                            </li>
+                        @endguest --}}
                     </ul>
                 </div>
             </div>
@@ -182,7 +208,7 @@
             <div class="container-fluid">
                 <div class="row pt-5 bg-dark text-white">
                     <div class="col-md-3 col-sm-6">
-                        LOGO
+                        <img src="{{ url('/images/logo.png') }}" alt="The Market Ladder">
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <h5>IT'S NEVER TOO LATE</h5>
