@@ -1,0 +1,13 @@
+.about-heading{
+    height: 400px;
+    background: url('/images/rhino.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    color: white;
+}
