@@ -34,3 +34,18 @@
 .testimonial div > i {
     margin: 10 auto;
 }
+
+.join{
+    height: 400px;
+    background: url("/images/balloon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.join > h1{
+    padding: 20px 0;
+    font-size: 4rem;
+    color: white;
+
+}

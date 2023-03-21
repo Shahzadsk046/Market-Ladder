@@ -94,4 +94,8 @@
             </div>
         </div>
     </section>
+    <section class="join my-3 py-5 text-center fs-1">
+        <h1 class="fw-bold text-uppercase">DON'T LET YOUR MONEY GET STAGNANT, GET THE TOOLS YOU NEED TO SUCCEED!</h1>
+        <button class="btn btn-dark">JOIN NOW</button>
+    </section>
 @endsection
