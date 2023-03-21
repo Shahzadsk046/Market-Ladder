@@ -1,3 +1,10 @@
+.about-page{
+    background-color: white;
+}
+.about-page section p {
+    font-size: 16px;
+}
+
 .about-heading{
     height: 400px;
     background: url('/images/rhino.png');
@@ -11,3 +18,4 @@
     vertical-align: middle;
     color: white;
 }
+
