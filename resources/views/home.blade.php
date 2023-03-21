@@ -138,4 +138,9 @@
             </div>
         </div>
     </section>
+
+    <section class="investment-journey my-3 py-5">
+        <h1>SWING TRADE YOUR INVESTMENTS TO NEW HEIGHTS, START YOUR JOURNEY TODAY!</h1>
+        <button class="btn">&nbsp; JOIN NOW! &nbsp;</button>
+    </section>
 @endsection
