@@ -23,11 +23,12 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row w-100">
+    <section class="container-fluid bg-white">
+        <div class="row w-100 d-flex align-items-center">
             <div class="col-md-4 p-5">
                 <h1 class="fw-bold">What is the Market Ladder?</h1>
-                <p class="text-gray fw-light">The Goal of The Market Ladder is to help the individual investor to grow their investments with the best
+                <p class="market-goal text-gray fw-light">The Goal of The Market Ladder is to help the individual investor
+                    to grow their investments with the best
                     possible swing trades. Here, we will show you exactly how to take swing trades in stocks, and/or etfs.
                     <br>
                     <br>
@@ -37,8 +38,42 @@
                 <button class="btn btn-danger">About Us</button>
             </div>
             <div class="col-md-8 p-0 m-0">
-                <img width="102.6%" src="{{ url('/images/rhino.png') }}"
-                    alt="Rhino Image"></div>
+                <img width="102.6%" src="{{ url('/images/rhino.png') }}" alt="Rhino Image">
+            </div>
         </div>
-    </div>
+    </section>
+    <section class="testimonial container-fluid bg-light">
+        <div class="row w-75 m-auto mt-5">
+            <div class="col-md-4 border border-top-0 d-flex flex-column">
+                <i class="fas fa-chart-bar fs-3 text-center" style="color:red"></i>
+                <h3 class="text-center">The Market Ladder</h3>
+                <ul class="list">
+                    <li>Employs technical analysis to find stocks that are at a potential pivot point and buys there so that
+                        losses can be minimized, while profits maximized.</li>
+                    <li>Finds the best possible trades for the individual investor.</li>
+                </ul>
+            </div>
+            <div class="col-md-4 border border-top-0 d-flex flex-column">
+                <i class="t fs-3 text-center" style="color:red"></i>
+                <h3 class="text-center">Trades</h3>
+                <ul class=" list">
+                    <li>Trading ideas are posted regularly, take the trades you want.</li>
+                    <li>Each trade is broken down into its basic components, so you know exactly when to buy, and sell.</li>
+                    <li>By keeping your money in *High Profitability Trades, you have the potential to far outperform standard market returns.</li>
+                </ul>
+            </div>
+            <div class="col-md-4 border border-top-0 d-flex flex-column">
+                <i class="fas fa-check fs-3 text-center" style="color:green"></i>
+                <h3 class="text-center">Join Now</h3>
+                <ul class="fa-ul fw-bold">
+                    <li><span class="fa-li"><i class="fas fa-hand-point-right"></i></span>Join now while prices are at
+                        their lowest.</li>
+                    <li><span class="fa-li"><i class="fas fa-hand-point-right"></i></span>Not sure? Start your Free 30 day
+                        Trial for first timer Subscribers</li>
+                    <li><span class="fa-li"><i class="fas fa-hand-point-right"></i></span>Learn More about the Market
+                        Ladder</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 @endsection

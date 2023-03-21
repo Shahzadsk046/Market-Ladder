@@ -20,3 +20,17 @@
     font-size: 200%;
     color: black;
 }
+
+.market-goal{
+    font-size: 150%;
+}
+
+.testimonial ul > li{
+    list-style-type: square;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.testimonial div > i {
+    margin: 10 auto;
+}
