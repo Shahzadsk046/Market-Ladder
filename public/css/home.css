@@ -1,0 +1,22 @@
+.ladder{
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+}
+
+.logo{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    /* z-index: 1;
+    margin-top: 10% !important; */
+}
+
+.text-image{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 200%;
+    color: black;
+}

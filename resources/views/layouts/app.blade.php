@@ -14,23 +14,9 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <style>
-        .navbar {
-            /* margin: 0 auto !important; */
-            /*center the element*/
-            width: 100% !important;
-            /* display: flex !important; */
-            /* customize width you want */
-        }
-
         .navbar-nav {
-            flex: 1;
-            margin: auto !important;
-            display: flex;
-            flex: 2;
             align-items: flex-end;
-            /* width: 100% !important; */
             padding-left: 10% !important;
-            /* justify-content: space-between; */
         }
 
         .navbar .container {
@@ -200,7 +186,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
 
