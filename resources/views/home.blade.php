@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <section class="container-fluid bg-white">
+    <section class="about container-fluid bg-white">
         <div class="row w-100 d-flex align-items-center">
             <div class="col-md-4 p-5">
                 <h1 class="fw-bold">What is the Market Ladder?</h1>
@@ -81,6 +81,16 @@
                     the loss potential, and an expected win rate of at least 50%. Of course, no trades are guaranteed, and
                     you may lose money.</li>
                 </ul>
+            </div>
+        </div>
+    </section>
+    <section class="video bg-white my-3 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>If You Want To See Technical Analysis In Action...</h1>
+                    <img class="img-fluid w-100 shadow" src="{{url('/images/video.png')}}" alt="">
+                </div>
             </div>
         </div>
     </section>
