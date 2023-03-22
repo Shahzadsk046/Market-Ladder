@@ -77,7 +77,7 @@
                                 href="{{ route('home') }}">{{ __('HOME') }}</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle {{ (request()->is('swing-trading/*')) ? 'active' : '' }}" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ __('SWING TRADING FOR SUCCESS') }}
                             </a>
@@ -95,7 +95,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle {{ (request()->is('about/*')) ? 'active' : '' }}" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ __('ABOUT THE MARKET LADDER') }}
                             </a>
@@ -113,7 +113,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle {{ (request()->is('fyi/*')) ? 'active' : '' }}" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ __('FYI') }}
                             </a>
@@ -137,7 +137,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle {{ (request()->is('member/*')) ? 'active' : '' }}" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ __('MEMBERS ONLY') }}
                             </a>
@@ -158,10 +158,10 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
+                            <a class="nav-link @if (Route::currentRouteName() == 'login') active @endif" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('join-now') }}">{{ __('JOIN NOW') }}</a>
+                            <a class="nav-link @if (Route::currentRouteName() == 'join-now') active @endif" href="{{ route('join-now') }}">{{ __('JOIN NOW') }}</a>
                         </li>
                         {{-- <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"

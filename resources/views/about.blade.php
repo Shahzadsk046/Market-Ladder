@@ -83,15 +83,15 @@
                 </div>
             </section>
             <section class="are-you-ready">
-                <div class="row">
+                <div class="row my-3 py-5">
                     <p><strong>
                         Are you ready to give it a try? >>>> For the New Subscribers, feel free to take the 30 day free trial. Then, you can understand how it all works, and decide on which plan might be best for you. We offer very reasonable membership rates, so hopefully cost is never an issue. <a href="#" class="text-success text-decoration-none">Join Now</a>
                     </strong></p>
                     <p><strong>**There are no guarantees of profitability, and you may lose substantial money.</strong></p>
                     <br>
-                </div>
-                <div class="join-btn d-flex flex-row justify-content-end align-items-center">
-                    <button class="btn btn-light text-success fw-bold">Join Now ! &nbsp;<i class="fas fa-arrow-right"></i></button>
+                    <div class="join-btn d-flex flex-row justify-content-end align-items-center">
+                        <button class="btn btn-light text-success fw-bold">Join Now ! &nbsp;<i class="fas fa-arrow-right"></i></button>
+                    </div>
                 </div>
             </section>
         </div>
