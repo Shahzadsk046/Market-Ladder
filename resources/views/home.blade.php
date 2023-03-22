@@ -25,7 +25,7 @@
     </div>
     <section class="about container-fluid bg-white">
         <div class="row w-100 d-flex align-items-center">
-            <div class="col-md-4 p-5">
+            <div class="col-md-6 p-5">
                 <h1 class="fw-bold">What is the Market Ladder?</h1>
                 <p class="market-goal text-gray fw-light">The Goal of The Market Ladder is to help the individual investor
                     to grow their investments with the best
@@ -37,7 +37,7 @@
                 </p>
                 <button class="btn btn-danger">About Us</button>
             </div>
-            <div class="col-md-8 p-0 m-0">
+            <div class="col-md-6 p-0 m-0">
                 <img width="102.6%" src="{{ url('/images/rhino.png') }}" alt="Rhino Image">
             </div>
         </div>
@@ -70,7 +70,7 @@
                     <li><span class="fa-li"><i class="fas fa-hand-point-right"></i></span>Join now while prices are at
                         their lowest.</li>
                     <li><span class="fa-li"><i class="fas fa-hand-point-right"></i></span>Not sure? Start your Free 30 day
-                        Trial for first timer Subscribers</li>
+                        Trial for first time Subscribers</li>
                     <li><span class="fa-li"><i class="fas fa-hand-point-right"></i></span>Learn More about the Market
                         Ladder</li>
                 </ul>
@@ -86,31 +86,34 @@
             </div>
         </div>
     </section>
-    <section class="video bg-white my-3 py-5">
+    <section class="video bg-white mt-3 py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h1>If You Want To See Technical Analysis In Action...</h1>
-                    <img class="img-fluid w-100 shadow" src="{{ url('/images/video.png') }}" alt="">
+                    {{-- <iframe src="https://www.youtube.com/watch?v=nv8Wi7VM11k" width="100%" height="300">
+                    </iframe> --}}
+                    <iframe width="100%" height="640" poster="{{ url('/images/video.png') }}" style="border:1px solid rgb(116, 4, 4);" src="https://www.youtube.com/embed/nv8Wi7VM11k" title="YouTube video player" frameborder="1"></iframe>
+                    {{-- <img class="img-fluid w-100 shadow" src="{{ url('/images/video.png') }}" alt=""> --}}
                 </div>
             </div>
         </div>
     </section>
-    <section class="join my-3 py-5 text-center">
+    <section class="join py-5 text-center">
         <h1 class="fw-bold text-uppercase">DON'T LET YOUR MONEY GET STAGNANT, GET THE TOOLS YOU NEED TO SUCCEED!</h1>
         <button class="btn btn-dark">JOIN NOW</button>
     </section>
 
-    <section class="reading my-3 py-3">
+    <section class="reading py-3">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
                     <h3>Recommended Reading to get the Most of The Market Ladder:</h3>
                     <div class="dropend">
-                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button type="button" class="btn dropdown-toggle show" id="button1" autofocus data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-play"></i> 1) The Compounding Advantage
                         </button>
-                        <ul class="dropdown-menu fa-ul">
+                        <ul class="dropdown-menu show fa-ul" style=" margin-top: -15%; margin-left:105%" onfocus="dropdownFunc(this.id)">
                             <li class="px-4 m-2 w-100">
                                 <h3>Compounding Magic</h3>
                                 <p>A lot of types of investments have a very special "growth agent" known as Compound Interest. This is where the interest earned on the account adds to the principal, and then starts to generate its own interest. And the longer this process continues, the more it has the rolling snowball effect.... Hence the term <strong style="background-color: lightgreen">"Compunding Magic."</strong></p>
@@ -139,8 +142,15 @@
         </div>
     </section>
 
-    <section class="investment-journey my-3 py-5">
+    <section class="investment-journey py-5">
         <h1>SWING TRADE YOUR INVESTMENTS TO NEW HEIGHTS, START YOUR JOURNEY TODAY!</h1>
         <button class="btn">&nbsp; JOIN NOW! &nbsp;</button>
     </section>
 @endsection
+
+<script>
+    function dropdownFunc(id){
+        button = document.getElementById('button1');
+        ulist = document.getElementById(id);
+    }
+</script>
