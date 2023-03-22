@@ -1,0 +1,42 @@
+.current-stock-page{
+    background-color: white;
+}
+
+.current-stock-heading{
+    height: 400px;
+    background: url('/images/about-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.bg-gray{
+    background-color: rgb(88, 88, 88) !important;
+    color: white !important;
+}
+
+.bg-beige{
+    background-color: rgb(255,240,219) !important;
+    color: black !important;
+}
+
+.bg-pink{
+    background-color: rgb(246,161,146) !important;
+    color: black !important;
+}
+
+.bg-parrot {
+    background-color: rgb(119,171,89) !important;
+    color: black !important;
+}
+
+.bg-parrot-light{
+    background-color: rgb(201,223,138) !important;
+    color: black !important;
+}
