@@ -156,7 +156,7 @@
                         @else
                             <li class="nav-item">
                                 <a class="nav-link"
-                                    href="{{ route('profile') }}">{{ __('MY ACCOUNT') }}</a>
+                                    href="{{ route('profile') }}">| &nbsp;{{ __('MY ACCOUNT') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('logout') }}"
