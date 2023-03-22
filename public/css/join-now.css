@@ -1,0 +1,27 @@
+.join-now-page {
+    background-color: white;
+}
+
+.join-now-page section p {
+    font-size: 16px;
+}
+
+.join-now-heading {
+    height: 400px;
+    background: gray;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.membership-table > tbody > tr > th, .membership-table > tbody > tr > td{
+    padding: 20px;
+    margin: 20px;
+    font-size: 18px;
+}

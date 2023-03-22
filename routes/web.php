@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\CurrentStockTradesController;
 use App\Http\Controllers\CompoundController;
+use App\Http\Controllers\JoinNowController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +38,7 @@ Route::view('/member/taking-trades','taking-trades')->name('taking-trades');
 Route::view('/member/current-stock','current-stock')->name('current-stock');
 Route::view('/member/current-etf','current-etf')->name('current-etf');
 Route::view('/login','auth/login')->name('login');
-Route::view('/join-now','auth/register')->name('join-now');
+// Route::view('/join-now','join-now')->name('join-now');
 Route::view('/profile','profile')->name('profile');
 // Route::view('/join-now','join-now')->name('join-now');
 Auth::routes();
@@ -49,3 +50,4 @@ Route::get('/about/performance', [PerformanceController::class, 'index'])->name(
 Route::get('/about/about-founder', [AboutFounderController::class, 'index'])->name('about-founder');
 Route::get('/swing-trading/compounding-magic', [CompoundController::class, 'index'])->name('compounding-magic');
 Route::get('/member/current-stock', [CurrentStockTradesController::class, 'index'])->name('current-stock');
+Route::get('/join-now', [JoinNowController::class, 'index'])->name('current-stock');
