@@ -50,4 +50,4 @@ Route::get('/about/performance', [PerformanceController::class, 'index'])->name(
 Route::get('/about/about-founder', [AboutFounderController::class, 'index'])->name('about-founder');
 Route::get('/swing-trading/compounding-magic', [CompoundController::class, 'index'])->name('compounding-magic');
 Route::get('/member/current-stock', [CurrentStockTradesController::class, 'index'])->name('current-stock');
-Route::get('/join-now', [JoinNowController::class, 'index'])->name('current-stock');
+Route::get('/join-now', [JoinNowController::class, 'index'])->name('join-now');
