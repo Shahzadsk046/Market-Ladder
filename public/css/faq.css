@@ -2,6 +2,10 @@
     background-color: white;
 }
 
+.faq-page section p {
+    font-size: 16px;
+}
+
 .faq-heading {
     height: 400px;
     background: url('/images/about-bg.png');

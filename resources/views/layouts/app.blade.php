@@ -179,7 +179,7 @@
             @yield('content')
         </main>
 
-        <footer class="py-4">
+        <footer>
             <div class="container-fluid">
                 <div class="row pt-5 bg-dark text-white">
                     <div class="col-md-3 col-sm-6">

@@ -2,6 +2,10 @@
     background-color: white;
 }
 
+.compounding-page section p {
+    font-size: 16px;
+}
+
 .compounding-heading {
     height: 400px;
     background: url('/images/about-bg.png');
@@ -14,4 +18,37 @@
     justify-content: center;
     vertical-align: middle;
     color: white;
+}
+
+.compound-table tr:nth-child(1){
+width: 300px;
+}
+table.compound-table > tbody > tr:nth-of-type(1) > td:nth-of-type(1) {
+    width: 60%;
+    padding: 20px;
+  }
+
+ .compound-table > tbody > tr > th:not(:first-child) {
+    text-align: center;
+ }
+ .compound-table > tbody > tr:not(:first-child) > td {
+    width: 200px;
+    text-align: center;
+    padding: 15px !important;
+
+}
+
+.join {
+    height: 400px;
+    background: url("/images/balloon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.join>h1 {
+    padding: 20px 0;
+    font-size: 4rem;
+    color: white;
+
 }
