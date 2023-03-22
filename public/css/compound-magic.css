@@ -1,0 +1,17 @@
+.compounding-page {
+    background-color: white;
+}
+
+.compounding-heading {
+    height: 400px;
+    background: url('/images/about-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    color: white;
+}
