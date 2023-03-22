@@ -13,25 +13,14 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.1/css/all.min.css" integrity="sha512-KulI0psuJQK8UMpOeiMLDXJtGOZEBm8RZNTyBBHIWqoXoPMFcw+L5AEo0YMpsW8BfiuWrdD1rH6GWGgQBF59Lg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .navbar-nav {
-            align-items: flex-end;
-            padding-left: 10% !important;
-        }
 
-        .navbar .container {
-            /*overwrite bootstrap style*/
-            width: 100% !important;
-            margin: 0;
-        }
+    {{-- Icons --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.1/css/all.min.css"
+        integrity="sha512-KulI0psuJQK8UMpOeiMLDXJtGOZEBm8RZNTyBBHIWqoXoPMFcw+L5AEo0YMpsW8BfiuWrdD1rH6GWGgQBF59Lg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        .active {
-            color: green !important;
-            border-bottom: 2px solid green !important;
-        }
-    </style>
-
+    {{-- Style CSS --}}
+    <link rel="stylesheet" href={{ asset('css/app.css') }}>
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -58,27 +47,15 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
-                        {{-- @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
-
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else --}}
                         <li class="nav-item">
                             <a class="nav-link @if (Route::currentRouteName() == 'home') active @endif"
                                 href="{{ route('home') }}">{{ __('HOME') }}</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle {{ (request()->is('swing-trading/*')) ? 'active' : '' }}" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown"
+                                class="nav-link dropdown-toggle {{ request()->is('swing-trading/*') ? 'active' : '' }}"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" v-pre>
                                 {{ __('SWING TRADING FOR SUCCESS') }}
                             </a>
 
@@ -95,8 +72,10 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle {{ (request()->is('about/*')) ? 'active' : '' }}" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown"
+                                class="nav-link dropdown-toggle {{ request()->is('about/*') ? 'active' : '' }}"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" v-pre>
                                 {{ __('ABOUT THE MARKET LADDER') }}
                             </a>
 
@@ -113,8 +92,10 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle {{ (request()->is('fyi/*')) ? 'active' : '' }}" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown"
+                                class="nav-link dropdown-toggle {{ request()->is('fyi/*') ? 'active' : '' }}"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" v-pre>
                                 {{ __('FYI') }}
                             </a>
 
@@ -137,8 +118,10 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle {{ (request()->is('member/*')) ? 'active' : '' }}" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown"
+                                class="nav-link dropdown-toggle {{ request()->is('member/*') ? 'active' : '' }}"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" v-pre>
                                 {{ __('MEMBERS ONLY') }}
                             </a>
 
@@ -157,31 +140,35 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link @if (Route::currentRouteName() == 'login') active @endif" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @if (Route::currentRouteName() == 'join-now') active @endif" href="{{ route('join-now') }}">{{ __('JOIN NOW') }}</a>
-                        </li>
-                        {{-- <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
+                        <!-- Authentication Links -->
+                        @guest
+                            @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link @if (Route::currentRouteName() == 'login') active @endif" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
+                                </li>
+                            @endif
 
-                                <div class="dropdown-menu bg-dark dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item text-white" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
+                            @if (Route::has('join-now'))
+                                <li class="nav-item">
+                                    <a class="nav-link @if (Route::currentRouteName() == 'join-now') active @endif" href="{{ route('join-now') }}">{{ __('JOIN NOW') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="{{ route('profile') }}">{{ __('MY ACCOUNT') }}</a>
                             </li>
-                        @endguest --}}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    {{ __('LOGOUT') }}
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </li>
+                        @endguest
                     </ul>
                 </div>
             </div>

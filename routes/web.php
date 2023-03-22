@@ -36,10 +36,12 @@ Route::view('/member/taking-trades','taking-trades')->name('taking-trades');
 Route::view('/member/current-stock','current-stock')->name('current-stock');
 Route::view('/member/current-etf','current-etf')->name('current-etf');
 Route::view('/login','auth/login')->name('login');
-Route::view('/register','auth/register')->name('register');
-Route::view('/join-now','join-now')->name('join-now');
+Route::view('/join-now','auth/register')->name('join-now');
+Route::view('/profile','profile')->name('profile');
+// Route::view('/join-now','join-now')->name('join-now');
 Auth::routes();
 
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/about/about', [AboutController::class, 'index'])->name('about');
 Route::get('/about/performance', [PerformanceController::class, 'index'])->name('performance');

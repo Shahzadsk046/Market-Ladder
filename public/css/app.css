@@ -1,0 +1,14 @@
+.navbar-nav {
+    align-items: flex-end;
+    /* padding-left: 10% !important; */
+}
+/*
+.navbar .container {
+    width: 100% !important;
+    margin: 0;
+} */
+
+.active {
+    color: green !important;
+    border-bottom: 2px solid green !important;
+}
