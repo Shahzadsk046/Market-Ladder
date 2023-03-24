@@ -1,5 +1,18 @@
 <head>
-    <link rel="stylesheet" href={{ asset('css/home.css') }}>
+    <link rel="stylesheet"
+          href={{ asset('css/home.css') }}>
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    {{-- <script src="{{url('../js/home.js')}}"></script> --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="{{ asset('js/home.js') }}"></script>
+
 </head>
 @extends('layouts.app')
 
@@ -10,14 +23,20 @@
         <div class="row justify-content-center">
             <div class="col-md-12 mt-0">
                 @if (session('status'))
-                    <div class="alert alert-success" role="alert">
+                    <div class="alert alert-success"
+                         role="alert">
                         {{ session('status') }}
                     </div>
                 @endif
-
                 <div style="position: relative; left:0; top:0;">
-                    <img class="ladder" src="{{ url('/images/ladder.png') }}" width="100%" alt="Ladders">
-                    <img class="logo" src="{{ url('/images/logo.png') }}" width="20%" alt="Logo">
+                    <img class="ladder"
+                         src="{{ url('/images/ladder.png') }}"
+                         width="100%"
+                         alt="Ladders">
+                    <img class="logo"
+                         src="{{ url('/images/logo.png') }}"
+                         width="20%"
+                         alt="Logo">
                     <p class="text-image">Swing Trade <br>Your Investments <br>to New Heights!</p>
                 </div>
             </div>
@@ -35,17 +54,20 @@
                     We provide the very best possible trades for the individual investor. Every Trade is carefully analyzed
                     to make sure it is showing a good risk/reward ratio through technical analysis.
                 </p>
-                <button class="btn btn-danger">About Us</button>
+                <button class="about-btn border-0">&nbsp;About Us&nbsp;</button>
             </div>
             <div class="col-md-6 p-0 m-0">
-                <img width="102.6%" src="{{ url('/images/rhino.png') }}" alt="Rhino Image">
+                <img width="102.6%"
+                     src="{{ url('/images/rhino.png') }}"
+                     alt="Rhino Image">
             </div>
         </div>
     </section>
     <section class="testimonial container-fluid bg-light">
         <div class="row w-75 m-auto mt-5">
             <div class="col-md-4 border border-top-0 d-flex flex-column">
-                <i class="fas fa-chart-bar fs-3 text-center" style="color:red"></i>
+                <i class="fas fa-chart-bar fs-3 text-center"
+                   style="color:red"></i>
                 <h3 class="text-center">The Market Ladder</h3>
                 <ul class="list">
                     <li>Employs technical analysis to find stocks that are at a potential pivot point and buys there so that
@@ -54,9 +76,10 @@
                 </ul>
             </div>
             <div class="col-md-4 border border-top-0 d-flex flex-column">
-                <i class="fas fa-tachometer-alt fs-3 text-center" style="color:red"></i>
+                <i class="fas fa-tachometer-alt fs-3 text-center"
+                   style="color:red"></i>
                 <h3 class="text-center">Trades</h3>
-                <ul class=" list">
+                <ul class="list">
                     <li>Trading ideas are posted regularly, take the trades you want.</li>
                     <li>Each trade is broken down into its basic components, so you know exactly when to buy, and sell.</li>
                     <li>By keeping your money in *High Profitability Trades, you have the potential to far outperform
@@ -64,9 +87,10 @@
                 </ul>
             </div>
             <div class="col-md-4 border border-top-0 d-flex flex-column">
-                <i class="fas fa-check fs-3 text-center" style="color:green"></i>
+                <i class="fas fa-check fs-3 text-center"
+                   style="color:green"></i>
                 <h3 class="text-center">Join Now</h3>
-                <ul class="fa-ul fw-bold">
+                <ul class="fa-ul fw-bold list-unstyled">
                     <li><span class="fa-li"><i class="fas fa-hand-point-right"></i></span>Join now while prices are at
                         their lowest.</li>
                     <li><span class="fa-li"><i class="fas fa-hand-point-right"></i></span>Not sure? Start your Free 30 day
@@ -93,7 +117,13 @@
                     <h1>If You Want To See Technical Analysis In Action...</h1>
                     {{-- <iframe src="https://www.youtube.com/watch?v=nv8Wi7VM11k" width="100%" height="300">
                     </iframe> --}}
-                    <iframe width="100%" height="640" poster="{{ url('/images/video.png') }}" style="border:1px solid rgb(116, 4, 4);" src="https://www.youtube.com/embed/nv8Wi7VM11k" title="YouTube video player" frameborder="1"></iframe>
+                    <iframe width="100%"
+                            height="640"
+                            poster="{{ url('/images/video.png') }}"
+                            style="border:1px solid rgb(116, 4, 4);"
+                            src="https://www.youtube.com/embed/nv8Wi7VM11k"
+                            title="YouTube video player"
+                            frameborder="1"></iframe>
                     {{-- <img class="img-fluid w-100 shadow" src="{{ url('/images/video.png') }}" alt=""> --}}
                 </div>
             </div>
@@ -101,42 +131,69 @@
     </section>
     <section class="join py-5 text-center">
         <h1 class="fw-bold text-uppercase">DON'T LET YOUR MONEY GET STAGNANT, GET THE TOOLS YOU NEED TO SUCCEED!</h1>
-        <button class="btn btn-dark">JOIN NOW</button>
+        <button class="join-btn">JOIN NOW</button>
     </section>
 
-    <section class="reading py-3">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <h3>Recommended Reading to get the Most of The Market Ladder:</h3>
-                    <div class="dropend">
-                        <button type="button" class="btn dropdown-toggle show" id="button1" autofocus data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-play"></i> 1) The Compounding Advantage
-                        </button>
-                        <ul class="dropdown-menu show fa-ul" style=" margin-top: -15%; margin-left:105%" onfocus="dropdownFunc(this.id)">
-                            <li class="px-4 m-2 w-100">
-                                <h3>Compounding Magic</h3>
-                                <p>A lot of types of investments have a very special "growth agent" known as Compound Interest. This is where the interest earned on the account adds to the principal, and then starts to generate its own interest. And the longer this process continues, the more it has the rolling snowball effect.... Hence the term <strong style="background-color: lightgreen">"Compunding Magic."</strong></p>
-                                <a href="#" class="unstyle">Read Full Page</a>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-play"></i> 2) Swing Trading Stocks
-                        </button>
-                        <ul class="dropdown-menu fa-ul">
-                            <li class="px-4 m-2 w-100">Swing Trading Stocks</li>
-                        </ul>
-                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-play"></i> 3) Swing Trading with ETFs
-                        </button>
-                        <ul class="dropdown-menu fa-ul">
-                            <li class="px-4 m-2 w-100">Swing Trading with ETFs</li>
-                        </ul>
+
+    <section class="readings py-3">
+        <div>
+            <div loading="lazy"
+                 onresize="resizeTile()"
+                 class="reading"
+                 id="reading">
+                <div class="leftTile">
+                    <div class="leftContent"
+                         id="leftContent">
+                        <div class="li">
+                            <h1 class=""
+                                id="li">
+                                <p>Recommended Reading to get the Most of The Market Ladder:</p>
+                            </h1>
+                            <br>
+                            <li class=" "
+                                onclick="getTitle(this.id)"
+                                data-question="Compounding Magic"
+                                data-answer="<p><strong>A lot of types of investments have a very special “growth agent” known as Compound Interest.&nbsp; This is where the interest earned on the account adds to the principal,&nbsp; and then starts to generate its own interest.&nbsp; And the longer this process continues, the more it has the rolling snowball effect…. Hence the term&nbsp;<span class='bglGreen'>“Compounding Magic.”</span><strong><span class='bglGreen'>&nbsp;</span>&nbsp;</strong></strong></p>"
+                                data-url="/compounding-magic"
+                                id="listItem1"
+                                style="background-color: rgba(190, 1, 1, 0.89); color: white;"> &nbsp; 1) The Compounding
+                                Advantage </li>
+                            <li class=" "
+                                onclick="getTitle(this.id)"
+                                data-question=""
+                                data-answer="<p><strong><strong></strong>ETFs in simplest terms&nbsp;are a basket of stocks that track an index, sector, or other asset / investment strategy. These investments can be bought and sold on a stock exchange just like a stock.&nbsp; For example, the “SPY” ETF tracks the overall stock market/ S&amp;P 500 index, and the ETF “XLE” tracks the energy sector....&nbsp;</strong></p>"
+                                data-url="/what-are-etfs"
+                                id="listItem2"
+                                style="background-color: inherit; color: inherit;"> &nbsp; 2) What are ETFs? </li>
+                            <li class=" "
+                                onclick="getTitle(this.id)"
+                                data-question=""
+                                data-answer="<p><strong>Here, at The Market Ladder, we like to trade inverse and Leveraged ETFs to get the greatest trading flexibility, and amplification of results, while always using careful money management methods to help protect capital.&nbsp;&nbsp;</strong><strong>&nbsp;&nbsp;</strong></p>"
+                                data-url="/swing-trading-etf"
+                                id="listItem3"
+                                style="background-color: inherit; color: inherit;"> &nbsp; 3) Swing Trading with ETFs </li>
+                        </div>
                     </div>
-
                 </div>
-                <div class="col-md-9">
-
+                <div class="rightTile"
+                     alt="the market ladder"
+                     title="the market ladder">
+                    <div class="rightContent"
+                         id="rightContent"
+                         style="height:406px">
+                        <div class="li">
+                            <h1 class=""
+                                id="tileHead">Compounding Magic</h1>
+                            <p class=""
+                               id="tileBody">
+                            </p>
+                            <span class="tileLink p-0">
+                                <a href="/compounding-magic"
+                                   id="tileLink"
+                                   style="color:inherit">Read full Page</a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,10 +204,3 @@
         <button class="btn">&nbsp; JOIN NOW! &nbsp;</button>
     </section>
 @endsection
-
-<script>
-    function dropdownFunc(id){
-        button = document.getElementById('button1');
-        ulist = document.getElementById(id);
-    }
-</script>

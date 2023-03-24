@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HouseController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\CurrentStockTradesController;
 use App\Http\Controllers\FAQController;
@@ -45,6 +46,7 @@ Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/house', [HouseController::class, 'index'])->name('house');
 Route::get('/about/about', [AboutController::class, 'index'])->name('about');
 // Route::get('/about/performance', [PerformanceController::class, 'index'])->name('performance');
 // Route::get('/about/about-founder', [AboutFounderController::class, 'index'])->name('about-founder');
