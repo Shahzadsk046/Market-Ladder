@@ -1,0 +1,66 @@
+.contact-page{
+    background-color: white;
+}
+.contact-page section p {
+    font-size: 16px;
+}
+
+.contact-heading{
+    height: 400px;
+    background: url('/images/contact-head.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.contact-body{
+    justify-content: center;
+}
+
+.contact-body > div > h3 {
+    color: #6d6d6d;
+}
+
+.text-sansSerif{
+    font-family: sans-serif;
+}
+
+.text-dddgrey{
+    color: #333 !important;
+}
+
+.form-control {
+    background-color: transparent !important;
+}
+
+.contact-body .btn-contact{
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    width: 9vw;
+    height: 3.6vw;
+    letter-spacing: 1px;
+    font-size: 1.4vw;
+    font-weight: 600;
+    font-family: "Open Sans",sans-serif;
+    border-radius: 0;
+    border: 0.1px #fff double;
+    border-width: 3px;
+    background-color: #5db605;
+    color: #fff;
+    transition: all .6s;
+}
+
+.contact-body .btn-contact:hover{
+    letter-spacing: 0px;
+    border-radius: 5%;
+    border: 0.1px #5db605 solid;
+    border-bottom: 2px #5db605 solid;
+    background-color: #fff;
+    color: #5db605;
+}

@@ -1,7 +1,12 @@
-body * {
+body {
     transition: all .5s;
     transition-timing-function: ease;
+    font-family: 'Montserrat', sans-serif;
 }
+
+/* #app{
+    margin-bottom: 520px !important;
+} */
 
 .navbar {
     overflow: visible !important;
@@ -10,6 +15,10 @@ body * {
     top: 0 !important;
     width: 100% !important;
     z-index: 100 !important;
+}
+
+#navbar-head{
+    margin-bottom: 120px !important;
 }
 
 .navbar-brand{
