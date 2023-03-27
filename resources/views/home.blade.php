@@ -19,6 +19,13 @@
 
 
 @section('content')
+    <div id="alertDelete"
+         class="alert alert-warning alert-dismissible text-center p-2 fs-6 fw-bold"
+         role="alert"
+         style="margin-top: 120px">
+        Thanks for stopping by, we are opening Soon but not quite ready, Please check back in a couple weeks for our grand
+        opening!
+    </div>
     <div class="m-0 p-0 container-fluid">
         <div class="row justify-content-center">
             <div class="col-md-12 mt-0">
@@ -117,25 +124,29 @@
                     <h1>If You Want To See Technical Analysis In Action...</h1>
                     {{-- <iframe src="https://www.youtube.com/watch?v=nv8Wi7VM11k" width="100%" height="300">
                     </iframe> --}}
-                    <iframe width="100%"
-                            height="640"
-                            poster="{{ url('/images/video.png') }}"
-                            style="border:1px solid rgb(116, 4, 4);"
-                            src="https://www.youtube.com/embed/nv8Wi7VM11k"
-                            title="YouTube video player"
-                            frameborder="1"></iframe>
-                    {{-- <img class="img-fluid w-100 shadow" src="{{ url('/images/video.png') }}" alt=""> --}}
+                    <div class="video" style=" border: 2px #720000 solid !important; -webkit-box-shadow: 0px 5px 38px 0px rgba(77,77,77,1); -moz-box-shadow: 0px 5px 38px 0px rgba(77,77,77,1); box-shadow: 0px 5px 38px 0px rgba(77,77,77,1) !important;">
+
+                        <iframe width="100%"
+                                height="640"
+                                poster="{{ url('/images/video.png') }}"
+                                style="border:1px solid rgb(116, 4, 4);"
+                                src="https://www.youtube.com/embed/nv8Wi7VM11k"
+                                title="YouTube video player"
+                                frameborder="1"></iframe>
+                        {{-- <img class="img-fluid w-100 shadow" src="{{ url('/images/video.png') }}" alt=""> --}}
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="join py-5 text-center">
         <h1 class="fw-bold text-uppercase">DON'T LET YOUR MONEY GET STAGNANT, GET THE TOOLS YOU NEED TO SUCCEED!</h1>
-        <button class="join-btn">JOIN NOW</button>
+        <a href="/join-now"
+           class="join-btn">JOIN NOW</a>
     </section>
 
 
-    <section class="readings py-3">
+    <section class="readings">
         <div>
             <div loading="lazy"
                  onresize="resizeTile()"
@@ -199,7 +210,7 @@
         </div>
     </section>
 
-    <section class="investment-journey py-5">
+    <section class="investment-journey text-white text-center py-5">
         <h1>SWING TRADE YOUR INVESTMENTS TO NEW HEIGHTS, START YOUR JOURNEY TODAY!</h1>
         <button class="btn">&nbsp; JOIN NOW! &nbsp;</button>
     </section>

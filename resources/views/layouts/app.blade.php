@@ -22,16 +22,19 @@
     {{-- Style CSS --}}
     <link rel="stylesheet" href={{ asset('css/app.css') }}>
 
+    {{-- Jquery --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <div id="app" >
+        <nav id="navbar_top" class="navbar navbar-expand-sm navbar-light mb-5 bg-white" style="transition: all 1s;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ url('/images/logo.png') }}" alt="The Market Ladder">
+                <a class="navbar-brand" href="{{ url('/') }}" style="transition: all 1s">
+                    <img class="brand-logo" src="{{ url('/images/logo.png') }}" alt="The Market Ladder" style="width: 250px; height: 96px; margin-left: 30px;">
                     {{-- {{ config('app.name', 'The Market Ladder') }} --}}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -54,7 +57,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown"
-                                class="nav-link dropdown-toggle {{ request()->is('swing-trading/*') ? 'active' : '' }}"
+                                class="nav-link {{ request()->is('swing-trading/*') ? 'active' : '' }}"
                                 href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false" v-pre>
                                 {{ __('SWING TRADING FOR SUCCESS') }}
@@ -74,7 +77,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown"
-                                class="nav-link dropdown-toggle {{ request()->is('about/*') ? 'active' : '' }}"
+                                class="nav-link {{ request()->is('about/*') ? 'active' : '' }}"
                                 href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false" v-pre>
                                 {{ __('ABOUT THE MARKET LADDER') }}
@@ -94,7 +97,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown"
-                                class="nav-link dropdown-toggle {{ request()->is('fyi/*') ? 'active' : '' }}"
+                                class="nav-link {{ request()->is('fyi/*') ? 'active' : '' }}"
                                 href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false" v-pre>
                                 {{ __('FYI') }}
@@ -120,7 +123,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown"
-                                class="nav-link dropdown-toggle {{ request()->is('member/*') ? 'active' : '' }}"
+                                class="nav-link {{ request()->is('member/*') ? 'active' : '' }}"
                                 href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false" v-pre>
                                 {{ __('MEMBERS ONLY') }}

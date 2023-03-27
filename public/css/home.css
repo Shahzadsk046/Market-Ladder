@@ -50,7 +50,7 @@ body {
 
 .testimonial .list-unstyled{
         padding-left: 0;
-        list-style: none !important; 
+        list-style: none !important;
 }
 
 .testimonial div > i {
@@ -97,8 +97,11 @@ body {
 
 .join-btn {
     /* margin-top: 2%; */
+    text-decoration: none;
     padding-right: 2vw;
     padding-left: 1.5vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
     width: fit-content;
     width: -moz-fit-content;
     width: -webkit-fit-content;
@@ -282,8 +285,11 @@ a {
 }
 
 .investment-journey {
-    text-align: center;
-    background-color: rgb(113, 255, 47);
+    padding: 3vw;
+    height: auto;
+    width: 100%;
+    word-wrap: break-word;
+    background-color: #5db605;
 }
 
 .investment-journey h1 {
@@ -292,8 +298,25 @@ a {
 }
 
 .investment-journey button {
-    background-color: red;
-    color: white;
+    background-color: rgba(209,0,0,.993);
+    color: #fff;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.4vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 0;
+    width: fit-content;
+    height: 3.5vw;
+    transition: all .8s;
+}
+
+.investment-journey button:hover {
+    color: #5db605;
+    background-color: #fff;
 }
 
 .fade-in-left {

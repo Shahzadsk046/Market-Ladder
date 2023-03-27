@@ -39,16 +39,46 @@ table.compound-table > tbody > tr:nth-of-type(1) > td:nth-of-type(1) {
 }
 
 .join {
-    height: 400px;
-    background: url("/images/balloon.png");
+    width: 100%;
+    text-align: center;
+    background-image: url("/images/balloon.png");
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 }
 
-.join>h1 {
+.join > h1 {
     padding: 20px 0;
     font-size: 4rem;
     color: white;
+}
 
+.join > .join-btn {
+    /* margin-top: 2%; */
+    text-decoration: none;
+    padding-right: 2vw;
+    padding-left: 1.5vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    height: 3.6vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px #fff solid;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.8s;
+}
+
+.join > .join-btn:hover {
+    border: 0;
+    border-bottom: 4px #000 solid;
+    background-color: #fff;
+    color: #000;
 }
