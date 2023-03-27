@@ -1,19 +1,17 @@
 <head>
     <link rel="stylesheet"
           href={{ asset('css/home.css') }}>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script type="text/javascript"
             src="{{ asset('js/home.js') }}"></script>
 
 </head>
 @extends('layouts.app')
 
-
-
 @section('content')
     <div id="alertDelete"
          class="alert alert-warning alert-dismissible text-center p-2 fs-6 fw-bold"
-         role="alert"
-         style="margin-top: 120px">
+         role="alert">
         Thanks for stopping by, we are opening Soon but not quite ready, Please check back in a couple weeks for our grand
         opening!
     </div>

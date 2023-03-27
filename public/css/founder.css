@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.founder-page{
+    background-color: white;
+}
+.founder-page section p {
+    font-size: 16px;
+}
+
+.founder-heading{
+    height: 400px;
+    background-image: url('/images/founder-head.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.text-dgrey{
+    color: #6d6d6d;
+}
+
+/* .commonRow{
+    padding-top: 0.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} */
+
+/* .commonRow .text {
+    display: flex;
+    align-items: flex-start;
+    font-family: "Montserrat",sans-serif;
+    color: #525151;
+    font-weight: 500;
+    color: #333;
+}
+
+.commonRow .img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+} */

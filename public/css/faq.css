@@ -8,7 +8,8 @@
 
 .faq-heading {
     height: 400px;
-    background: url('/images/about-bg.png');
+    background-image: url('/images/about-bg.png');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
