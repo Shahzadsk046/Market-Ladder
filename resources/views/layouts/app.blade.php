@@ -183,7 +183,7 @@
             <div class="container-fluid">
                 <div class="row pt-5 bg-dark text-white">
                     <div class="col-md-3 col-sm-6">
-                        <img src="{{ url('/images/logo.png') }}" alt="The Market Ladder">
+                        <img class="img-fluid" src="{{ url('/images/footer_logo.png') }}" alt="The Market Ladder">
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <h5>IT'S NEVER TOO LATE</h5>
