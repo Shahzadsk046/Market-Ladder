@@ -22,3 +22,101 @@
     color: white;
 }
 
+
+.commonRow {
+    padding-top: 0.5rem;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.commonRow .text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    color: #525151;
+    /* font-weight: bold !important; */
+    color: #333;
+}
+.commonRow .text h3{
+    font-weight: bold;
+}
+
+.commonRow .text p,
+.commonRow .text li {
+    font-size: 16px;
+    font-weight: 600 !important;
+    color: #525151;
+    margin: 0 0 !important;
+}
+
+.commonRow .img {
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+}
+
+.commonRow .img img {
+    width: 100%;
+    height: 26vw;
+}
+
+
+.commonRow .text .text-link{
+    text-decoration: none;
+    color: #007bff;
+}
+
+.commonRow .text .text-link:hover{
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.bg-pink {
+    background-color: rgb(252, 229, 205);
+}
+
+.text-green{
+    color: #06c910 !important;
+    font-weight: 500;
+    font-size: 18px !important;
+}
+
+.investment-journey {
+    padding: 3vw;
+    height: auto;
+    width: 100%;
+    word-wrap: break-word;
+    background-color: #5db605;
+}
+
+.investment-journey h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.investment-journey button {
+    background-color: rgba(209,0,0,.993);
+    color: #fff;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.4vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 0;
+    width: fit-content;
+    height: 3.5vw;
+    transition: all .8s;
+}
+
+.investment-journey button:hover {
+    color: #5db605;
+    background-color: #fff;
+}
