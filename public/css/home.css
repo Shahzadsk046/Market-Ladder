@@ -59,6 +59,7 @@ body {
 
 .join {
     width: 100%;
+    height: 30vw;
     text-align: center;
     background-image: url("/images/balloon.png");
     background-attachment: fixed;
@@ -69,30 +70,8 @@ body {
 
 .join > h1 {
     padding: 20px 0;
-    font-size: 4rem;
+    font-size: 3.8rem;
     color: white;
-}
-
-.about-btn {
-    background-color: rgba(209, 0, 0, 0.993);
-    color: #fff;
-    margin: 0;
-    margin-top: 20px;
-    text-transform: capitalize;
-    font-size: 1.4vw;
-    padding-right: 0.8vw;
-    padding-left: 0.8vw;
-    padding-top: 0;
-    padding-bottom: 0;
-    border-radius: 0;
-    width: fit-content;
-    width: -moz-fit-content;
-    width: -webkit-fit-content;
-    height: 2.6vw;
-}
-
-.about-btn:hover {
-    color: #000;
 }
 
 .join-btn {
@@ -121,6 +100,29 @@ body {
     border: 0;
     border-bottom: 4px #000 solid;
     background-color: #fff;
+    color: #000;
+}
+
+
+.about-btn {
+    background-color: rgba(209, 0, 0, 0.993);
+    color: #fff;
+    margin: 0;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-size: 1.4vw;
+    padding-right: 0.8vw;
+    padding-left: 0.8vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 0;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    height: 2.6vw;
+}
+
+.about-btn:hover {
     color: #000;
 }
 

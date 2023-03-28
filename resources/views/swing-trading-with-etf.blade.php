@@ -253,7 +253,13 @@
 
 
                 </div>
+
             </div>
+        </section>
+        <section class="join py-5 text-center">
+            <h1 class="fw-bold text-uppercase">DON'T LET YOUR MONEY GET STAGNANT, GET THE TOOLS YOU NEED TO SUCCEED!</h1>
+            <a href="/join-now"
+               class="join-btn">JOIN NOW</a>
         </section>
 
 
