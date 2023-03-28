@@ -10,7 +10,7 @@
             <h1>CURRENT ETF TRADES</h1>
         </div>
 
-        <div class="container">
+        <section class="container">
             <div class="row my-3 py-5">
                 <div class="col-md-12">
                     <p>
@@ -76,7 +76,7 @@
 
                 </div>
             </div>
-        </div>
+        </section>
 
 
 

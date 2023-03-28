@@ -7,23 +7,19 @@ body {
     background-color: #fff !important;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-.disclaimers-page{
+.disclaimers-page {
     background-color: white;
     font-weight: 500;
-    font-size: 1rem !important;
+    font-size: 1rem;
 }
 
 .disclaimers-page section p {
-    font-size: 20px !important;
+    font-size: 16px;
 }
 
-.disclaimers-heading{
+.disclaimers-heading {
     height: 400px;
-    background-image: url('/images/current-etf-head.png');
+    background-image: url("/images/current-etf-head.png");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -39,4 +35,14 @@ a:hover {
 .disclaimer-link {
     text-decoration: none;
     color: inherit;
+}
+
+.disclaimer-link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 990px) {
+    .disclaimers-page {
+        text-align: center;
+    }
 }

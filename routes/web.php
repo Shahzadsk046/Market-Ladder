@@ -11,6 +11,7 @@ use App\Http\Controllers\FAQController;
 use App\Http\Controllers\DisclaimersController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CompoundController;
+use App\Http\Controllers\SwingTradingETFController;
 use App\Http\Controllers\JoinNowController;
 
 /*
@@ -30,7 +31,7 @@ use App\Http\Controllers\JoinNowController;
 
 // Route::view('/swing-trading/compounding-magic','compounding-magic')->name('compounding-magic');
 Route::view('/swing-trading/swing-trading-with-stocks','swing-trading-with-stocks')->name('swing-trading-with-stocks');
-Route::view('/swing-trading/swing-trading-with-etf','swing-trading-with-etf')->name('swing-trading-with-etf');
+// Route::view('/swing-trading/swing-trading-with-etf','swing-trading-with-etf')->name('swing-trading-with-etf');
 // Route::view('/about/about','about')->name('about');
 Route::view('/about/performance','performance')->name('performance');
 Route::view('/about/about-founder','about-founder')->name('about-founder');
@@ -55,6 +56,7 @@ Route::get('/about/about', [AboutController::class, 'index'])->name('about');
 // Route::get('/about/performance', [PerformanceController::class, 'index'])->name('performance');
 Route::get('/about/about-founder', [FounderController::class, 'index'])->name('about-founder');
 Route::get('/swing-trading/compounding-magic', [CompoundController::class, 'index'])->name('compounding-magic');
+Route::get('/swing-trading/swing-trading-with-etf', [SwingTradingETFController::class, 'index'])->name('swing-trading-with-etf');
 Route::get('/fyi/faq', [FAQController::class, 'index'])->name('faq');
 Route::get('/fyi/contact', [ContactUsController::class, 'index'])->name('contact');
 Route::get('/fyi/disclaimers', [DisclaimersController::class, 'index'])->name('disclaimers');

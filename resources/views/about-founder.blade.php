@@ -11,7 +11,7 @@
             <h6>About The Founder</h6>
         </div>
 
-        <div class="container">
+        <section class="container">
             <div class="row text-dgrey">
                 <div class="col-12">
                     <div class="row commonRow my-3 py-5">
@@ -105,5 +105,5 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     @endsection

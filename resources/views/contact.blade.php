@@ -11,7 +11,7 @@
             <h6>Do You Have Any Questions Or Comments?</h6>
         </div>
 
-        <div class="container">
+        <section class="container">
             <div class="row my-3 py-5 contact-body">
                 <div class="col-md-12 pl-0 d-flex justify-content-center">
                     <h3 style="font-size: 1.5rem">Feel free To Contact Us</h3>
@@ -68,7 +68,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
 
 
     </div>
