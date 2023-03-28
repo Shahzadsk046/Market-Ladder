@@ -1,0 +1,24 @@
+.terms-page {
+    background-color: white;
+}
+
+.terms-page section p {
+    font-size: 16px;
+    /* font-weight: 500; */
+}
+
+.terms-heading {
+    height: 400px;
+    background-image: url("/images/taking-trades.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    color: white;
+}
+

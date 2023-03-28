@@ -1,0 +1,24 @@
+.performance-page {
+    background-color: white;
+}
+
+.performance-page section p {
+    font-size: 16px;
+    /* font-weight: 500; */
+}
+
+.performance-heading {
+    height: 400px;
+    background-image: url("/images/performance-header.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    color: white;
+}
+

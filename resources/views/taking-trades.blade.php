@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h1>Here's a short video on How to Takke the Trades</h1>
+                        <h1>Here's a short video on How to Take the Trades</h1>
                         {{-- <iframe src="https://www.youtube.com/watch?v=nv8Wi7VM11k" width="100%" height="300">
                                     </iframe> --}}
                         <div class="video"

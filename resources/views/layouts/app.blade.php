@@ -103,8 +103,8 @@
                                         {{ __('THE COMPOUNDING MAGIC') }}
                                     </a>
                                     <a class="dropdown-item text-white"
-                                       href="{{ route('swing-trading-with-stocks') }}">
-                                        {{ __('SWING TRADING WITH STOCKS') }}
+                                       href="{{ route('what-are-etf') }}">
+                                        {{ __("WHAT ARE ETF'S'") }}
                                     </a>
                                     <a class="dropdown-item text-white"
                                        href="{{ route('swing-trading-with-etf') }}">
