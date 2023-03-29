@@ -41,6 +41,8 @@
           href={{ asset('css/app.css') }}> --}}
           <link href="{{asset('admin/css/styles.css')}}"
           rel="stylesheet" />
+          <link href="{{asset('admin/css/adminapp.css')}}"
+          rel="stylesheet" />
 
     {{-- Jquery --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

@@ -19,6 +19,7 @@ use App\Http\Controllers\CompoundController;
 use App\Http\Controllers\WhatAreETFsController;
 use App\Http\Controllers\SwingTradingETFController;
 use App\Http\Controllers\JoinNowController;
+use App\Http\Controllers\AdminBlocksController;
 
 /*
 |--------------------------------------------------------------------------
@@ -76,3 +77,8 @@ Route::get('/member/current-etf', [CurrentETFTradesController::class, 'index'])-
 Route::get('/member/post', [LadderPostController::class, 'index'])->name('post');
 Route::get('/member/taking-trades', [TakingTradesController::class, 'index'])->name('taking-trades');
 Route::get('/join-now', [JoinNowController::class, 'index'])->name('join-now');
+Route::get('/blocks', [AdminBlocksController::class, 'index'])->name('blocks');
+Route::get('/files', [AdminBlocksController::class, 'index'])->name('files');
+Route::get('/pages', [AdminBlocksController::class, 'index'])->name('pages');
+Route::get('/navigations', [AdminBlocksController::class, 'index'])->name('navigations');
+Route::get('/users', [AdminBlocksController::class, 'index'])->name('users');
