@@ -57,7 +57,7 @@ Auth::routes();
 
 
 Route::get('/', [AdminController::class, 'index'])->name('admin');
-Route::get('/', [HomeController::class, 'index'])->name('home');
+// Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 // Route::get('/house', [HouseController::class, 'index'])->name('house');
 Route::get('/about/about', [AboutController::class, 'index'])->name('about');
