@@ -254,44 +254,73 @@
         </main>
 
         <footer>
-            <div class="container-fluid">
-                <div class="row pt-5 bg-dark text-white">
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-fluid"
-                             src="{{ url('/images/footer_logo.png') }}"
-                             alt="The Market Ladder">
+            <section>
+                <div class="footer m-0">
+                    <div class="m-0 pt-1">
+                        <div class="text-sm pt-2 pb-2">
+                            <div class="row m-0 p-3">
+                                <div class="col-md-3 col-sm-3 mb-3 p-0 pl-0 float-end">
+                                    <img class="img-fluid"
+                                         src="{{ url('/images/footer_logo.png') }}"
+                                         alt="The Market Ladder">
+                                </div>
+                                <hr class="clearfix d-sm-none pb-3">
+                                <div class="col-sm mb-sm-0 mb-1">
+                                    <p>IT'S NEVER TOO LATE</p>
+                                    <ul class="list-unstyled">
+                                        <p>Sign up to the market ladder today, and start your journey to stock market
+                                            success!
+                                        </p>
+                                    </ul>
+                                </div>
+                                <div class="col-sm mb-sm-0 mb-1">
+                                    <p>CONTACT</p>
+                                    <ul class="list-unstyled">
+                                        <p>Send your questions or comments to info@themarketladder.com</p>
+                                    </ul>
+                                </div>
+                                <div class="col-sm mb-sm-0 mb-1">
+                                    <p>NOTICE</p>
+                                    <ul class="list-unstyled">
+                                        <p>Stock Market Trades and Commentary shown by The Market Ladder, LLC, are for
+                                            informational purposes only, and should not be considered Investment advice.
+                                        </p>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <h5>IT'S NEVER TOO LATE</h5>
-                        <p>Sign up to the market ladder today, and start your journey to stock market success!</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <h5>CONTACT</h5>
-                        <p>Send your questions or comments to info@themarketladder.com</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <h5>NOTICE</h5>
-                        <p>Stock Market Trades and Commentary shown by The Market Ladder, LLC, are for informational
-                            purposes only, and should not be considered Investment advice.</p>
+                    <div class="copyright pt-2"
+                         style="background-color: rgb(48, 44, 44);">
+                        <div class="row m-0 p-2">
+                            <div class="col-sm-6 ps-4">
+                                <div>
+                                    <a href="/"
+                                       target="_self">Home</a>
+                                    |
+                                    <a href="/fyi/terms"
+                                       target="_self">Terms</a>
+                                    |
+                                    <a href="/fyi/disclaimers"
+                                       target="_self">Disclosures</a>
+                                    |
+                                    <a href="/fyi/privacy-policy"
+                                       target="_self">Privacy Policy</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pe-4">
+                                <div>
+                                    <a>Website Design By Shehzad Khan</a>
+                                    |
+                                    <a style="cursor: text">&copy; 2023 All Right Reserved</a>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row pt-5 text-white justify-content-between bg-black opacity-75">
-                    <ul class="col-6 d-flex list-inline">
-                        <li><a href="/"
-                               class="navbar-brand"> Home </a></li> &nbsp;|&nbsp;
-                        <li><a href="/terms"
-                               class="navbar-brand"> Terms </a></li> &nbsp;|&nbsp;
-                        <li><a href="/disclosures"
-                               class="navbar-brand"> Disclosures </a></li> &nbsp;|&nbsp;
-                        <li><a href="/privacy-policy"
-                               class="navbar-brand"> Privacy Policy </a></li>
-                    </ul>
-                    <ul class="col-6 d-flex justify-content-end list-inline">
-                        <li>Website Design By Shehzad Khan</li> &nbsp;|&nbsp;
-                        <li>&copy; 2023 All Right Reserved</li>
-                    </ul>
-                </div>
-            </div>
+            </section>
         </footer>
     </div>
 </body>
