@@ -1,6 +1,6 @@
 <head>
     <link rel="stylesheet"
-          href={{ asset('css/terms.css') }}>
+          href={{ asset('css/terms-of-services.css') }}>
 </head>
 @extends('layouts.app')
 

@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TermsController extends Controller
+class PrivacyController extends Controller
 {
     //
     function index(){
-        return view('terms-of-services');
+        return view('privacy-policy');
     }
 }
