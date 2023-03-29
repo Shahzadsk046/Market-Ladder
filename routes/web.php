@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\HouseController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PerformanceController;
 use App\Http\Controllers\FounderController;
@@ -43,7 +43,7 @@ use App\Http\Controllers\JoinNowController;
 // Route::view('/about/about-founder','about-founder')->name('about-founder');
 // Route::view('/fyi/faq','faq')->name('faq');
 // Route::view('/fyi/terms','terms')->name('terms');
-Route::view('/fyi/privacy-policy','privacy-policy')->name('privacy-policy');
+// Route::view('/fyi/privacy-policy','privacy-policy')->name('privacy-policy');
 // Route::view('/fyi/contact','contact')->name('contact');
 // Route::view('/fyi/disclaimers','disclaimers')->name('disclaimers');
 // Route::view('/member/post','post')->name('post');
@@ -55,9 +55,11 @@ Route::view('/login','auth/login')->name('login');
 Route::view('/profile','profile')->name('profile');
 Auth::routes();
 
+
+Route::get('/', [AdminController::class, 'index'])->name('admin');
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/house', [HouseController::class, 'index'])->name('house');
+// Route::get('/house', [HouseController::class, 'index'])->name('house');
 Route::get('/about/about', [AboutController::class, 'index'])->name('about');
 Route::get('/about/performance', [PerformanceController::class, 'index'])->name('performance');
 Route::get('/about/about-founder', [FounderController::class, 'index'])->name('about-founder');
