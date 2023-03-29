@@ -1,3 +1,8 @@
+
+body{
+    background-color: white !important;
+}
+
 .what-are-etf-page {
     background-color: white;
 }
@@ -9,7 +14,7 @@
 
 .what-are-etf-heading {
     height: 400px;
-    background-image: url("/images/taking-trades.png");
+    background-image: url("/images/swing-trading-with-etf-header.png");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -22,3 +27,81 @@
     color: white;
 }
 
+.commonRow {
+    padding-top: 0.5rem;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.commonRow .text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    color: #525151;
+    /* font-weight: bold !important; */
+    /* color: #333; */
+}
+.commonRow .text h2,
+.commonRow .text h3,
+.commonRow .text h5{
+    font-weight: bold;
+}
+
+.commonRow .text p,
+.commonRow .text li {
+    font-size: 16px;
+    font-weight: bold !important;
+    color: #525151;
+    margin: 0 0 !important;
+}
+
+.commonRow .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commonRow .img img {
+    width: 100%;
+    height: 26vw;
+}
+
+
+.commonRow .text .text-link{
+    text-decoration: none;
+    color: #007bff;
+}
+
+.commonRow .text a:hover{
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.bg-pink {
+    background-color: rgb(252, 229, 205);
+}
+
+.text-green{
+    color: #06c910 !important;
+    font-weight: 500;
+    font-size: 18px !important;
+}
+
+.text-mail{
+    color: inherit;
+    text-decoration: none;
+    background-color: inherit;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
