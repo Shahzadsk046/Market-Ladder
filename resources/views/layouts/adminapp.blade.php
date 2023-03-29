@@ -10,7 +10,7 @@
     <meta name="csrf-token"
           content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'The Market Ladder') }} > @yield('title')</title>
+    <title>{{ config('app.name', 'The Market Ladder') }} > Admin @yield('title')</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch"
@@ -35,23 +35,22 @@
     {{-- Style CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
           rel="stylesheet" />
-    <link href="admin/css/styles.css"
+          <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+          crossorigin="anonymous"></script>
+          {{-- <link rel="stylesheet"
+          href={{ asset('css/app.css') }}> --}}
+          <link href="{{asset('admin/css/styles.css')}}"
           rel="stylesheet" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-          href={{ asset('css/app.css') }}>
 
     {{-- Jquery --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
 </head>
 
 <body>
-    <div id="app"
-         class="overflow-hidden">
+    <div>
         <main class="py-4">
             @if (!Auth::check())
                 @yield('content')

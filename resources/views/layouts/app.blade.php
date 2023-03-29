@@ -261,7 +261,7 @@
                             <div class="row m-0 p-3">
                                 <div class="col-md-3 col-sm-3 mb-3 p-0 pl-0 float-end">
                                     <img class="img-fluid"
-                                         src="{{ url('/images/footer_logo.png') }}"
+                                         src="{{ url('/images/white_logo.png') }}"
                                          alt="The Market Ladder">
                                 </div>
                                 <hr class="clearfix d-sm-none pb-3">
