@@ -4,6 +4,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'Swing Trading With ETF'}} @endsection
+
 @section('content')
     <div class="swing-trading-with-etf-page">
         <div class="swing-trading-with-etf-heading">

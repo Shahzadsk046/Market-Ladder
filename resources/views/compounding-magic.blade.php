@@ -3,6 +3,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'Compounding Magic'}} @endsection
+
 @section('content')
     <div class="compounding-page">
         <div class="compounding-heading">

@@ -4,6 +4,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'About The Founder'}} @endsection
+
 @section('content')
     <div class="founder-page">
         <div class="founder-heading">

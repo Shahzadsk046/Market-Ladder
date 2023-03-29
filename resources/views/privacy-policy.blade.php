@@ -4,6 +4,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'Privacy Policy'}} @endsection
+
 @section('content')
     <div class="privacy-policy-page">
         <div class="privacy-policy-heading">

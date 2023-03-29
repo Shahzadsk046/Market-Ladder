@@ -3,6 +3,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'Join Now'}} @endsection
+
 @section('content')
     <div class="join-now-page">
         <div class="join-now-heading">

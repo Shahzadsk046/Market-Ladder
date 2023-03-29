@@ -4,6 +4,8 @@
 
 @extends('layouts.app')
 
+@section('title') {{'FAQ'}} @endsection
+
 @section('content')
     <div class="faq-page">
         <div class="faq-heading">

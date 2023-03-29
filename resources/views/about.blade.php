@@ -4,6 +4,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'About The Market Ladder'}} @endsection
+
 @section('content')
     <div class="about-page">
 

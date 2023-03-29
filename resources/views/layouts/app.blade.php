@@ -10,7 +10,7 @@
     <meta name="csrf-token"
           content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'The Market Ladder') }}</title>
+    <title>{{ config('app.name', 'The Market Ladder') }} > @yield('title')</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch"

@@ -4,6 +4,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'Taking Trades'}} @endsection
+
 @section('content')
     <div class="taking-trades-page">
         <div class="taking-trades-heading">

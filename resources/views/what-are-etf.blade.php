@@ -4,6 +4,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'What are ETFs?'}} @endsection
+
 @section('content')
     <div class="what-are-etf-page">
         <div class="what-are-etf-heading">

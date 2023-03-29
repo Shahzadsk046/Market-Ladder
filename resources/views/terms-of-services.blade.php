@@ -4,6 +4,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'Terms Of Services'}} @endsection
+
 @section('content')
     <div class="terms-page">
         <div class="terms-heading">

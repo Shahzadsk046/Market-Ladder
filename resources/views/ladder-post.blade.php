@@ -4,6 +4,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'The Ladder Post'}} @endsection
+
 @section('content')
     <div class="ladder-post-page">
         <div class="ladder-post-heading">

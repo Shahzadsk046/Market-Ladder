@@ -4,6 +4,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'Contact Us'}} @endsection
+
 @section('content')
     <div class="contact-page">
         <div class="contact-heading">

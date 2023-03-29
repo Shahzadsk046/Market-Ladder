@@ -4,6 +4,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'Disclosures and Disclaimers'}} @endsection
+
 @section('content')
     <div class="disclaimers-page">
         <div class="disclaimers-heading">

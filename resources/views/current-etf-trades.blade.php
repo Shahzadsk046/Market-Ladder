@@ -4,6 +4,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'Current ETF Trades (FOR PLUS MEMBERS)'}} @endsection
+
 @section('content')
     <div class="current-etf-page">
         <div class="current-etf-heading">

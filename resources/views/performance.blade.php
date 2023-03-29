@@ -4,6 +4,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'Performance'}} @endsection
+
 @section('content')
     <div class="performance-page">
         <div class="performance-heading">

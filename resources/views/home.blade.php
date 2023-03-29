@@ -8,6 +8,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'The Market Ladder'}} @endsection
+
 @section('content')
     <div id="alertDelete"
          class="alert alert-warning alert-dismissible text-center p-2 fs-6 fw-bold"

@@ -3,6 +3,8 @@
 </head>
 @extends('layouts.app')
 
+@section('title') {{'Current Stock Trades'}} @endsection
+
 @section('content')
     {{-- <h1>Current Stock Trades</h1> --}}
     <div class="current-stock-page">
