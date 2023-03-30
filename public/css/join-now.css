@@ -25,3 +25,15 @@
     margin: 20px;
     font-size: 18px;
 }
+
+.membership-cards a {
+    text-decoration: none;
+}
+
+.membership-cards a:hover {
+    text-decoration: underline;
+}
+
+.text-green{
+    color: #06c910;
+}
