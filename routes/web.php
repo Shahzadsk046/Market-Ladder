@@ -23,6 +23,10 @@ use App\Http\Controllers\MonthlyMembershipController;
 use App\Http\Controllers\AnnualMembershipController;
 use App\Http\Controllers\TrialMembershipController;
 use App\Http\Controllers\AdminBlocksController;
+use App\Http\Controllers\AdminFilesController;
+use App\Http\Controllers\AdminPagesController;
+use App\Http\Controllers\AdminNavigationsController;
+use App\Http\Controllers\AdminUsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -84,7 +88,7 @@ Route::get('/monthly-signup', [MonthlyMembershipController::class, 'index'])->na
 Route::get('/annual-signup', [AnnualMembershipController::class, 'index'])->name('annual-signup');
 Route::get('/trial-signup', [TrialMembershipController::class, 'index'])->name('trial-signup');
 Route::get('/blocks', [AdminBlocksController::class, 'index'])->name('blocks');
-Route::get('/files', [AdminBlocksController::class, 'index'])->name('files');
-Route::get('/pages', [AdminBlocksController::class, 'index'])->name('pages');
-Route::get('/navigations', [AdminBlocksController::class, 'index'])->name('navigations');
-Route::get('/users', [AdminBlocksController::class, 'index'])->name('users');
+Route::get('/files', [AdminFilesController::class, 'index'])->name('files');
+Route::get('/pages', [AdminPagesController::class, 'index'])->name('pages');
+Route::get('/navigations', [AdminNavigationsController::class, 'index'])->name('navigations');
+Route::get('/users', [AdminUsersController::class, 'index'])->name('users');

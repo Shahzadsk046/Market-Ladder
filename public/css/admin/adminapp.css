@@ -42,3 +42,8 @@ body {
     background-color: purple;
     color: #fff;
 }
+
+.bg-pink{
+    background-color: rgb(216, 72, 96);
+    color: #fff;
+}

@@ -639,6 +639,13 @@
             @include('layouts.footer')
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            $('#datatablesSimple').DataTable({
+                "dom": 'rtip'
+            });
+        });
+    </script>
 </body>
 
 </html>
