@@ -19,6 +19,9 @@ use App\Http\Controllers\CompoundController;
 use App\Http\Controllers\WhatAreETFsController;
 use App\Http\Controllers\SwingTradingETFController;
 use App\Http\Controllers\JoinNowController;
+use App\Http\Controllers\MonthlyMembershipController;
+use App\Http\Controllers\AnnualMembershipController;
+use App\Http\Controllers\TrialMembershipController;
 use App\Http\Controllers\AdminBlocksController;
 
 /*
@@ -77,6 +80,9 @@ Route::get('/member/current-etf', [CurrentETFTradesController::class, 'index'])-
 Route::get('/member/post', [LadderPostController::class, 'index'])->name('post');
 Route::get('/member/taking-trades', [TakingTradesController::class, 'index'])->name('taking-trades');
 Route::get('/join-now', [JoinNowController::class, 'index'])->name('join-now');
+Route::get('/monthly-signup', [MonthlyMembershipController::class, 'index'])->name('monthly-signup');
+Route::get('/annual-signup', [AnnualMembershipController::class, 'index'])->name('annual-signup');
+Route::get('/trial-signup', [TrialMembershipController::class, 'index'])->name('trial-signup');
 Route::get('/blocks', [AdminBlocksController::class, 'index'])->name('blocks');
 Route::get('/files', [AdminBlocksController::class, 'index'])->name('files');
 Route::get('/pages', [AdminBlocksController::class, 'index'])->name('pages');

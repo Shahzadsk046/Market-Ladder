@@ -1,0 +1,59 @@
+body {
+    background-color: white !important;
+}
+
+.form-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.text-dgrey{
+    color: #6d6d6d;
+}
+
+.text-ddgrey{
+    color: #525151;
+}
+
+.aboutHeader {
+    border: none;
+    padding: 20px;
+    padding-top: 25px;
+}
+
+.aboutHeader a{
+    text-decoration: none;
+}
+
+.aboutHeader a:hover{
+    text-decoration: underline;
+}
+
+.text{
+    font-size: 1.15vw;
+}
+
+.text-green{
+    color: #06c910;
+}
+
+.input-group input,
+.input-group span{
+    background-color: white !important;
+}
+
+.form-row a{
+    text-decoration: none;
+}
+.form-row a:hover{
+    text-decoration: underline;
+}
