@@ -5,7 +5,6 @@ window.addEventListener('DOMContentLoaded', event => {
     const datatablesSimple = document.getElementById('example');
     if (datatablesSimple) {
         new simpleDatatables.DataTable(datatablesSimple, {
-            searchable: false,
             paging: false,
         });
     }

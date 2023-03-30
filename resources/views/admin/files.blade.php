@@ -11,7 +11,7 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-md-12">
-                        <button class="btn btns bg-green"><i class="fas fa-plus"></i> &nbsp; New Area</button>
+                        <button class="btn btns bg-green"><i class="fas fa-upload"></i> &nbsp; Upload</button>
                     </div>
                 </div>
                 <div class="row my-3 py-2">

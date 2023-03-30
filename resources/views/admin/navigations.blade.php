@@ -55,9 +55,9 @@
                                         reflected on every internal page.</td>
                                     <td><button class="btn btns bg-red"
                                                 style="width: 100px"><i class="fas fa-pen"></i> Edit</button></td>
-                                    <td><button class="btn btns bg-purple"
-                                                style="width: 100px"><i class="fas fa-wand-magic-sparkles"></i>
-                                            Blocks</button></td>
+                                    <td><button class="btn btns bg-lightblue"
+                                                style="width: 100px"><i class="fas fa-link"></i>
+                                            Links</button></td>
                                 </tr>
                                 <tr>
                                     <td><button class="btn btns bg-pink"
