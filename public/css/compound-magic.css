@@ -39,47 +39,151 @@ table.compound-table > tbody > tr:nth-of-type(1) > td:nth-of-type(1) {
 
 }
 
-.join {
+.commonRow {
+    padding-top: 0.5rem;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.commonRow .text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    color: #525151;
+    /* font-weight: bold !important; */
+    color: #333;
+}
+.commonRow .text h3{
+    font-weight: bold;
+}
+
+.commonRow .text p,
+.commonRow .text li {
+    font-size: 16px;
+    font-weight: 600 !important;
+    color: #525151;
+    margin: 0 0 !important;
+}
+
+.commonRow .img {
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+}
+
+.commonRow .img img {
     width: 100%;
-    text-align: center;
-    background-image: url("/images/balloon.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 26vw;
 }
 
-.join > h1 {
-    padding: 20px 0;
-    font-size: 4rem;
-    color: white;
-}
 
-.join > .join-btn {
-    /* margin-top: 2%; */
+.commonRow .text .text-link{
     text-decoration: none;
-    padding-right: 2vw;
-    padding-left: 1.5vw;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
-    width: fit-content;
-    width: -moz-fit-content;
-    width: -webkit-fit-content;
-    height: 3.6vw;
-    font-size: 1.2vw;
-    font-weight: 600;
-    font-family: "Open Sans", sans-serif;
-    border: 0;
-    border-radius: 0;
-    border-bottom: 2px #fff solid;
-    background-color: #000;
-    color: #fff;
-    transition: all 0.8s;
+    color: #007bff;
 }
 
-.join > .join-btn:hover {
-    border: 0;
-    border-bottom: 4px #000 solid;
-    background-color: #fff;
-    color: #000;
+.commonRow .text .text-link:hover{
+    text-decoration: underline;
+    color: #0056b3;
 }
+
+.text-green{
+    color: #06c910 !important;
+    font-weight: 500;
+    font-size: 18px !important;
+}
+/*
+    .join {
+        width: 100%;
+        text-align: center;
+        background-image: url("/images/balloon.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .join > h1 {
+        padding: 20px 0;
+        font-size: 4rem;
+        color: white;
+    }
+
+    .join > .join-btn {
+        text-decoration: none;
+        padding-right: 2vw;
+        padding-left: 1.5vw;
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+        width: fit-content;
+        width: -moz-fit-content;
+        width: -webkit-fit-content;
+        height: 3.6vw;
+        font-size: 1.2vw;
+        font-weight: 600;
+        font-family: "Open Sans", sans-serif;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 2px #fff solid;
+        background-color: #000;
+        color: #fff;
+        transition: all 0.8s;
+    }
+
+    .join > .join-btn:hover {
+        border: 0;
+        border-bottom: 4px #000 solid;
+        background-color: #fff;
+        color: #000;
+    } */
+
+    .join {
+        width: 100%;
+        height: 30vw;
+        text-align: center;
+        background-image: url("/images/balloon.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .join > h1 {
+        padding: 20px 0;
+        font-size: 3.8rem;
+        color: white;
+    }
+
+    .join-btn {
+        /* margin-top: 2%; */
+        text-decoration: none;
+        padding-right: 2vw;
+        padding-left: 1.5vw;
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+        width: fit-content;
+        width: -moz-fit-content;
+        width: -webkit-fit-content;
+        height: 3.6vw;
+        font-size: 1.2vw;
+        font-weight: 600;
+        font-family: "Open Sans", sans-serif;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 2px #fff solid;
+        background-color: #000;
+        color: #fff;
+        transition: all 0.8s;
+    }
+
+    .join-btn:hover {
+        border: 0;
+        border-bottom: 4px #000 solid;
+        background-color: #fff;
+        color: #000;
+    }

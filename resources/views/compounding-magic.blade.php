@@ -137,16 +137,26 @@
                     <p><strong>*The Market Ladder's goal is to help customers maximize their investment returns, but can not
                             guarantee any specific levels of return.</strong></p>
                     <br>
-                    <div class="join-btn d-flex flex-row justify-content-end align-items-center">
-                        <button class="btn btn-light text-success fw-bold">Swing Trading with Stocks &nbsp;<i
-                                class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="row commonRow">
+                    <div class="col-12">
+                        <nav aria-label="...">
+                            <ul class="pagination d-flex justify-content-end">
+                                <li class="page-item"
+                                    aria-current="page">
+                                    <a class="page-link text-green"
+                                       href="/join-now">Swing Trading with Stocks &nbsp; &rightarrow; </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="join mt-3 py-5 text-center">
+        <section class="join py-5 text-center">
             <h1 class="fw-bold text-uppercase">DON'T LET YOUR MONEY GET STAGNANT, GET THE TOOLS YOU NEED TO SUCCEED!</h1>
-            <button class="btn btn-dark">JOIN NOW</button>
+            <a href="/join-now"
+               class="join-btn">JOIN NOW</a>
         </section>
 
 

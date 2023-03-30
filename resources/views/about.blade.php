@@ -141,7 +141,7 @@
                             <ul class="pagination d-flex justify-content-end">
                                 <li class="page-item"
                                     aria-current="page">
-                                    <a class="page-link text-green fw-bold"
+                                    <a class="page-link text-green"
                                        href="/join-now">Join Now ! &nbsp; &rightarrow; </a>
                                 </li>
                             </ul>
