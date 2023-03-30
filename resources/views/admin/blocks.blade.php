@@ -1,5 +1,5 @@
 @extends('layouts.adminapp')
- @extends('layouts.sidenav')
+ {{-- @extends('layouts.sidenav') --}}
  @section('content')
 
  @endsection
