@@ -78,7 +78,7 @@
         </div>
         <div id="layoutSidenav_content">
             {{-- <main> --}}
-            <main class="py-4">
+            <main>
                 @if (!Auth::check())
                     @yield('content')
                 @endif

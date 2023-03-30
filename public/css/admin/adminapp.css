@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(243, 241, 241);
+}
+
 .nav-link:hover,
 .nav-link:focus, .active {
     background: #8360c3 !important; /* fallback for old browsers */
@@ -11,4 +15,30 @@
         #2ebf91,
         #8360c3
     ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btns {
+    border-radius: 0.4vw;
+    /* width: inherit; */
+}
+
+.bg-green{
+    background-color: rgb(72, 212, 72);
+    color: white !important;
+}
+
+.bg-gray{
+    background-color: lightgray;
+    color: white !important;
+}
+
+.bg-red{
+    background-color: rgb(255, 81, 0);
+    color: #fff;
+}
+
+
+.bg-purple{
+    background-color: purple;
+    color: #fff;
 }
