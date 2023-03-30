@@ -31,8 +31,7 @@
                 </div>
                 <div class="row my-3 py-2">
                     <div class="col-12">
-                        <table id="example"
-                               style="border:1px solid black;">
+                        <table id="example" class="bg-white">
                             <thead>
                                 <tr>
                                     <th><input type="checkbox"
