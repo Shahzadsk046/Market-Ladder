@@ -1,14 +1,26 @@
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="{{url('/')}}"><img class="brand-logo" src="{{url('images/white_logo.png')}}" alt="The Market Ladder" style="width: 150px; height: 56px;"></a>
+        <a class="navbar-brand ps-3"
+           href="{{ url('/') }}"><img class="brand-logo"
+                 src="{{ url('images/white_logo.png') }}"
+                 alt="The Market Ladder"
+                 style="width: 150px; height: 56px;"></a>
         <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+                id="sidebarToggle"
+                href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <div class="input-group">
-                <input class="form-control" type="text" placeholder="Type to Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                <input class="form-control"
+                       type="text"
+                       placeholder="Type to Search for..."
+                       aria-label="Search for..."
+                       aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary"
+                        id="btnNavbarSearch"
+                        type="button"><i class="fas fa-search"></i></button>
             </div>
         </form>
         <!-- Navbar-->
@@ -26,27 +38,33 @@
     </nav>
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
-            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+            <nav class="sb-sidenav accordion sb-sidenav-dark"
+                 id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Dashboard</div>
-                        <a class="nav-link @if (Route::currentRouteName() == 'blocks') active @endif" href="/blocks">
+                        <a class="nav-link @if (Route::currentRouteName() == 'blocks') active @endif"
+                           href="/blocks">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-wand-sparkles"></i></div>
                             Blocks
                         </a>
-                        <a class="nav-link @if (Route::currentRouteName() == 'files') active @endif" href="/files">
+                        <a class="nav-link @if (Route::currentRouteName() == 'files') active @endif"
+                           href="/files">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-file-image"></i></div>
                             Files
                         </a>
-                        <a class="nav-link @if (Route::currentRouteName() == 'navigations') active @endif" href="/navigations">
+                        <a class="nav-link @if (Route::currentRouteName() == 'navigations') active @endif"
+                           href="/navigations">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-link"></i></div>
                             Navigations
                         </a>
-                        <a class="nav-link @if (Route::currentRouteName() == 'pages') active @endif" href="/pages">
+                        <a class="nav-link @if (Route::currentRouteName() == 'pages') active @endif"
+                           href="/pages">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-laptop"></i></div>
                             Pages
                         </a>
-                        <a class="nav-link @if (Route::currentRouteName() == 'users') active @endif" href="/users">
+                        <a class="nav-link @if (Route::currentRouteName() == 'users') active @endif"
+                           href="/users">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
                             Users
                         </a>
@@ -59,8 +77,13 @@
             </nav>
         </div>
         <div id="layoutSidenav_content">
-            <main>
-                {{-- <div class="container-fluid px-4">
+            {{-- <main> --}}
+            <main class="py-4">
+                @if (!Auth::check())
+                    @yield('content')
+                @endif
+            </main>
+            {{-- <div class="container-fluid px-4">
                     <h1 class="mt-4">Dashboard</h1>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item active">Dashboard</li>
@@ -612,9 +635,10 @@
                         </div>
                     </div>
                 </div> --}}
-            </main>
+            {{-- </main> --}}
             @include('layouts.footer')
         </div>
     </div>
 </body>
+
 </html>

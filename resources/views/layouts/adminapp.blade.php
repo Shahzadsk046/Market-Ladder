@@ -53,11 +53,12 @@
 
 <body>
     <div>
-        <main class="py-4">
+        @extends('layouts.sidenav')
+        {{-- <main class="py-4">
             @if (!Auth::check())
                 @yield('content')
             @endif
-        </main>
+        </main> --}}
         {{-- <main>
             @yield('content')
         </main> --}}
