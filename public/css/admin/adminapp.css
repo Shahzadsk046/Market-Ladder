@@ -3,7 +3,8 @@ body {
 }
 
 .nav-link:hover,
-.nav-link:focus, .active {
+.nav-link:focus,
+.active {
     background: #8360c3 !important; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to right,
@@ -22,33 +23,47 @@ body {
     /* width: inherit; */
 }
 
-.bg-green{
+.bg-green {
     background-color: rgb(72, 212, 72);
     color: white !important;
 }
 
-.bg-gray{
+.bg-gray {
     background-color: lightgray;
     color: white !important;
 }
 
-.bg-red{
+.bg-red {
     background-color: rgb(255, 81, 0);
     color: #fff;
 }
 
-
-.bg-purple{
+.bg-purple {
     background-color: purple;
     color: #fff;
 }
 
-.bg-pink{
+.bg-pink {
     background-color: rgb(216, 72, 96);
     color: #fff;
 }
 
-.bg-lightblue{
+.bg-lightblue {
     background-color: rgb(0, 174, 255);
     color: #fff;
+}
+
+#example tr td:nth-child(1),
+#example tr th:nth-child(1) {
+    width: 100px !important;
+}
+
+#example tr:last-child td:nth-child(1) {
+    border-right: none;
+}
+
+#example tr > :nth-last-child(1),
+#example tr > :nth-last-child(2) {
+    width: 100px;
+    text-align: center;
 }

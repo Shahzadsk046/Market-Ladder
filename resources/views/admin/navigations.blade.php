@@ -31,7 +31,8 @@
                 </div>
                 <div class="row my-3 py-2">
                     <div class="col-12">
-                        <table id="example" class="bg-white">
+                        <table id="example"
+                               class="table bg-white">
                             <thead>
                                 <tr>
                                     <th><input type="checkbox"
@@ -46,13 +47,12 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><input type="checkbox"
+                                    <td style="width: 20px"><input type="checkbox"
                                                name="all_data"
                                                id="all_data"></td>
-                                    <td>Balloon Banner</td>
-                                    <td>balloon-banner</td>
-                                    <td>This banner is used in end of all internal Pages, so changes made here will be
-                                        reflected on every internal page.</td>
+                                    <td>Footer Navigation</td>
+                                    <td>footer_nav</td>
+                                    <td></td>
                                     <td><button class="btn btns bg-red"
                                                 style="width: 100px"><i class="fas fa-pen"></i> Edit</button></td>
                                     <td><button class="btn btns bg-lightblue"
@@ -60,9 +60,30 @@
                                             Links</button></td>
                                 </tr>
                                 <tr>
-                                    <td><button class="btn btns bg-pink"
-                                                style="width: 100px"><i class="fas fa-trash"></i> Delete</button></td>
+                                    <td style="width: 20px"><input type="checkbox"
+                                               name="all_data"
+                                               id="all_data"></td>
+                                    <td>Footer Navigation</td>
+                                    <td>footer_nav</td>
+                                    <td></td>
+                                    <td><button class="btn btns bg-red"
+                                                style="width: 100px"><i class="fas fa-pen"></i> Edit</button></td>
+                                    <td><button class="btn btns bg-lightblue"
+                                                style="width: 100px"><i class="fas fa-link"></i>
+                                            Links</button></td>
                                 </tr>
+                                <tr>
+                                    <td colspan="100%">
+
+                                        <button class="btn btns bg-pink"
+                                                style="width: 100px"><i class="fas fa-trash"></i> Delete</button>
+                                    </td>
+                                </tr>
+                                {{-- <tr>
+                                    <td colspan="2" class="bg-primary"><button class="btn btns bg-pink"
+                                                ><i class="fas fa-trash"></i> Delete</button></td>
+
+                                </tr> --}}
                             </tbody>
                         </table>
                     </div>
