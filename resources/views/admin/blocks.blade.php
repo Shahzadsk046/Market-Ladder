@@ -31,7 +31,8 @@
                 </div>
                 <div class="row my-3 py-2">
                     <div class="col-12">
-                        <table id="example" class="bg-white">
+                        <table id="example"
+                               class="bg-white">
                             <thead>
                                 <tr>
                                     <th><input type="checkbox"
@@ -40,8 +41,7 @@
                                     <th>Name</th>
                                     <th>Slug</th>
                                     <th>Description</th>
-                                    <th>Edit</th>
-                                    <th>Blocks</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -53,11 +53,10 @@
                                     <td>balloon-banner</td>
                                     <td>This banner is used in end of all internal Pages, so changes made here will be
                                         reflected on every internal page.</td>
-                                    <td><button class="btn btns bg-red"
-                                                style="width: 100px"><i class="fas fa-pen"></i> Edit</button></td>
-                                    <td><button class="btn btns bg-purple"
-                                                style="width: 100px"><i class="fas fa-wand-magic-sparkles"></i>
-                                            Blocks</button></td>
+                                    <td><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button>
+                                        <button class="btn btns w-fx bg-purple"><i class="fas fa-wand-magic-sparkles"></i>
+                                            Blocks</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><button class="btn btns bg-pink"

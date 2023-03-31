@@ -28,10 +28,29 @@
                         <button class="btn btns bg-green"><i class="fa-solid fa-filter"></i> Filter</button>
                         <button class="btn btns bg-gray">Clear</button>
                     </div> --}}
+                    <nav class="navbar navbar-expand-sm bg-white">
+                        <div class="container-fluid">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active"
+                                       aria-current="page"
+                                       href="#">All</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                       href="#">Newest</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                       href="#">Trash</a>
+                                </li>
+                        </div>
+                    </nav>
                 </div>
                 <div class="row my-3 py-2">
                     <div class="col-12">
-                        <table id="example" class="bg-white">
+                        <table id="example"
+                               class="bg-white">
                             <thead>
                                 <tr>
                                     <th><input type="checkbox"
@@ -42,8 +61,7 @@
                                     <th>Size</th>
                                     <th>MIME Type</th>
                                     <th>Folder</th>
-                                    <th>Edit</th>
-                                    <th>View</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -51,16 +69,16 @@
                                     <td><input type="checkbox"
                                                name="all_data"
                                                id="all_data"></td>
-                                    <td><img src="images/logo.png" alt="logo"></td>
+                                    <td><img src="images/logo.png"
+                                             alt="logo"></td>
                                     <td>filename</td>
                                     <td>file size</td>
                                     <td>file type</td>
                                     <td>images</td>
-                                    <td><button class="btn btns bg-red"
-                                                style="width: 100px"><i class="fas fa-pen"></i> Edit</button></td>
-                                    <td><button class="btn btns bg-lightblue"
-                                                style="width: 100px"><i class="fas fa-eye"></i>
-                                            View</button></td>
+                                    <td><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button>
+                                        <button class="btn btns w-fx bg-lightblue"><i class="fas fa-eye"></i>
+                                            View</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><button class="btn btns bg-pink"

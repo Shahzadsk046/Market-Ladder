@@ -11,7 +11,11 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-md-12">
-                        <button class="btn btns bg-green"><i class="fas fa-plus"></i> &nbsp; New Area</button>
+                        <button class="btn btns bg-green"><i class="fas fa-plus"></i> &nbsp; New Page</button>
+                        <button class="btn btns bg-lightblue"><i class="fas fa-table"></i> &nbsp; Table View</button>
+                        {{-- Have Some Conditions --}}
+                        {{-- <button class="btn btns bg-green"><i class="fas fa-table"></i> &nbsp; Table View</button> --}}
+                        {{-- Have Some Conditions --}}
                     </div>
                 </div>
                 <div class="row my-3 py-2">
@@ -31,17 +35,16 @@
                 </div>
                 <div class="row my-3 py-2">
                     <div class="col-12">
-                        <table id="example" class="bg-white">
+                        <table id="example"
+                               class="bg-white">
                             <thead>
                                 <tr>
                                     <th><input type="checkbox"
                                                name="all_data"
                                                id="all_data"></th>
-                                    <th>Name</th>
-                                    <th>Slug</th>
-                                    <th>Description</th>
-                                    <th>Edit</th>
-                                    <th>Blocks</th>
+                                    <th>Title</th>
+                                    <th>Type</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -49,15 +52,25 @@
                                     <td><input type="checkbox"
                                                name="all_data"
                                                id="all_data"></td>
-                                    <td>Balloon Banner</td>
-                                    <td>balloon-banner</td>
-                                    <td>This banner is used in end of all internal Pages, so changes made here will be
-                                        reflected on every internal page.</td>
-                                    <td><button class="btn btns bg-red"
-                                                style="width: 100px"><i class="fas fa-pen"></i> Edit</button></td>
-                                    <td><button class="btn btns bg-purple"
-                                                style="width: 100px"><i class="fas fa-wand-magic-sparkles"></i>
-                                            Blocks</button></td>
+                                    <td>Home <i class="fas fa-home text-success"></i> <br> <span class="text-muted">Link
+                                            (/)</span></td>
+                                    <td>Default Page Type</td>
+                                    <td><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button>
+                                        <button class="btn btns w-fx bg-lightblue"><i class="fas fa-eye"></i>
+                                            View</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"
+                                               name="all_data"
+                                               id="all_data"></td>
+                                    <td>404 <i class="fa-solid fa-link-simple-slash"></i> <br> <span class="text-muted">Link
+                                            (/404)</span></td>
+                                    <td>Default Page Type</td>
+                                    <td><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button>
+                                        <button class="btn btns w-fx bg-lightblue"><i class="fas fa-eye"></i>
+                                            View</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><button class="btn btns bg-pink"

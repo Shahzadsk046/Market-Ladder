@@ -11,7 +11,7 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-md-12">
-                        <button class="btn btns bg-green"><i class="fas fa-plus"></i> &nbsp; New Area</button>
+                        <button class="btn btns bg-green"><i class="fas fa-plus"></i> &nbsp; New User</button>
                     </div>
                 </div>
                 <div class="row my-3 py-2">
@@ -28,20 +28,36 @@
                         <button class="btn btns bg-green"><i class="fa-solid fa-filter"></i> Filter</button>
                         <button class="btn btns bg-gray">Clear</button>
                     </div> --}}
+                    <nav class="navbar navbar-expand-sm bg-white">
+                        <div class="container-fluid">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active"
+                                       aria-current="page"
+                                       href="#">All</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                       href="#">Trash</a>
+                                </li>
+                        </div>
+                    </nav>
                 </div>
                 <div class="row my-3 py-2">
                     <div class="col-12">
-                        <table id="example" class="bg-white">
+                        <table id="example"
+                               class="bg-white">
                             <thead>
                                 <tr>
                                     <th><input type="checkbox"
                                                name="all_data"
                                                id="all_data"></th>
-                                    <th>Name</th>
-                                    <th>Slug</th>
-                                    <th>Description</th>
-                                    <th>Edit</th>
-                                    <th>Blocks</th>
+                                    <th>Display Name</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                    {{-- <th></th> --}}
+                                    {{-- <th></th> --}}
                                 </tr>
                             </thead>
                             <tbody>
@@ -49,15 +65,14 @@
                                     <td><input type="checkbox"
                                                name="all_data"
                                                id="all_data"></td>
-                                    <td>Balloon Banner</td>
-                                    <td>balloon-banner</td>
-                                    <td>This banner is used in end of all internal Pages, so changes made here will be
-                                        reflected on every internal page.</td>
-                                    <td><button class="btn btns bg-red"
-                                                style="width: 100px"><i class="fas fa-pen"></i> Edit</button></td>
-                                    <td><button class="btn btns bg-purple"
-                                                style="width: 100px"><i class="fas fa-wand-magic-sparkles"></i>
-                                            Blocks</button></td>
+                                    <td>Administrator</td>
+                                    <td>test@4acetech@gmail.com</td>
+                                    <td>Active</td>
+                                    <td><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button>
+                                        <button class="btn btns w-fx bg-lightblue"><i class="fas fa-user"></i>
+                                            View Profile</button>
+                                        <button class="btn btns w-fx bg-pink">Delete User</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><button class="btn btns bg-pink"

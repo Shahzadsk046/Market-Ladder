@@ -2,9 +2,9 @@ body {
     background-color: rgb(243, 241, 241);
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.active {
+#sidenavAccordion .nav-link:hover,
+#sidenavAccordion .nav-link:focus,
+#sidenavAccordion .active {
     background: #8360c3 !important; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to right,
@@ -20,7 +20,11 @@ body {
 
 .btns {
     border-radius: 0.4vw;
-    /* width: inherit; */
+    /* width:33%; */
+}
+
+.w-fx{
+    width: auto;
 }
 
 .bg-green {
@@ -44,7 +48,7 @@ body {
 }
 
 .bg-pink {
-    background-color: rgb(216, 72, 96);
+    background-color: rgb(255, 100, 126);
     color: #fff;
 }
 
@@ -62,8 +66,14 @@ body {
     border-right: none;
 }
 
-#example tr > :nth-last-child(1),
-#example tr > :nth-last-child(2) {
-    width: 100px;
-    text-align: center;
+/* #example tr > :nth-last-child(2), */
+#example tr > :nth-last-child(1) {
+    min-width: 200px;
+    text-align: left;
+}
+
+#example tr > th,
+#example tr > td{
+    border-right: none;
+    border-left: none;
 }
