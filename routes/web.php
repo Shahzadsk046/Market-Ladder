@@ -27,6 +27,7 @@ use App\Http\Controllers\AdminFilesController;
 use App\Http\Controllers\AdminPagesController;
 use App\Http\Controllers\AdminNavigationsController;
 use App\Http\Controllers\AdminUsersController;
+use App\Http\Controllers\NewAreaBlocksController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,7 +65,6 @@ Route::view('/profile','profile')->name('profile');
 Auth::routes();
 
 
-Route::get('/', [AdminController::class, 'index'])->name('admin');
 // Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 // Route::get('/house', [HouseController::class, 'index'])->name('house');
@@ -87,8 +87,13 @@ Route::get('/join-now', [JoinNowController::class, 'index'])->name('join-now');
 Route::get('/monthly-signup', [MonthlyMembershipController::class, 'index'])->name('monthly-signup');
 Route::get('/annual-signup', [AnnualMembershipController::class, 'index'])->name('annual-signup');
 Route::get('/trial-signup', [TrialMembershipController::class, 'index'])->name('trial-signup');
+
+// ADMIN ROUTES
+Route::get('/', [AdminController::class, 'index'])->name('admin');
 Route::get('/blocks', [AdminBlocksController::class, 'index'])->name('blocks');
 Route::get('/files', [AdminFilesController::class, 'index'])->name('files');
 Route::get('/pages', [AdminPagesController::class, 'index'])->name('pages');
 Route::get('/navigations', [AdminNavigationsController::class, 'index'])->name('navigations');
 Route::get('/users', [AdminUsersController::class, 'index'])->name('users');
+Route::get('/blocks/new-area', [NewAreaBlocksController::class, 'index'])->name('new-area');
+

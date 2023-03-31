@@ -23,6 +23,12 @@ body {
     /* width:33%; */
 }
 
+button:hover{
+    background-color: blue !important;
+    /* opacity: .5; */
+    color: white !important;
+}
+
 .w-fx{
     width: auto;
 }
