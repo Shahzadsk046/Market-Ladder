@@ -11,7 +11,45 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-md-12">
-                        <button class="btn btns bg-green"><i class="fas fa-upload"></i> &nbsp; Upload</button>
+                         <!-- Button trigger modal -->
+                         <button type="button" class="btn btns bg-green" data-bs-toggle="modal" data-bs-target="#uploadModal">
+                            <i class="fas fa-upload"></i> &nbsp; Upload
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="uploadModalLabel">What folder would you like to upload to?</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                    <ul class="navbar-nav me-auto m-3 mb-lg-0">
+                                        <li class="nav-item">
+                                          <a class="nav-link" aria-current="page" href="/files/images">
+                                            <h6 class="m-1 p-0">Images</h6>
+                                            <p class="text-muted">A folder for images</p>
+                                          </a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" aria-current="page" href="/files/documents">
+                                            <h6 class="m-1 p-0">Documents</h6>
+                                            <p class="text-muted">A folder for documents.</p>
+                                          </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                {{-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div> --}}
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row my-3 py-2">
