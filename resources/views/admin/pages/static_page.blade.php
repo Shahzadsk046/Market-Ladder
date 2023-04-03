@@ -201,8 +201,6 @@
                                     Create</button>
                             </div>
                             <div>
-
-                                
                                 <button class="btn btns bg-gray"
                                         id="cancel">Cancel</button>
                             </div>
