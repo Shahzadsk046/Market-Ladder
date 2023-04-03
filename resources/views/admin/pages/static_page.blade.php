@@ -132,10 +132,21 @@
                             </div>
                         </div>
                         <div class="col-12 mt-3 mb-1 p-3 bg-white">
-                            <h6 class="fw-bolder">Header Visibility</h6>
-                            <p class="text-muted">Display Header ?</p>
-                            <hr />
-                            <div class="d-flex justify-content-between">
+                            {{-- <h6 class="fw-bolder">Header Visibility</h6>
+                            <p class="text-muted">Display Header ?</p> --}}
+                            <label for="displayHeader"
+                                   class="form-label">Header Visibility</label>
+                            <div class="form-text mb-3">Display Header ?</div>
+                            <div class="form-check form-switch ms-4">
+                                <input class="form-check-input border-success bg-green fs-4"
+                                       type="checkbox"
+                                       role="switch"
+                                       name="displayHeader"
+                                       id="displayHeader"
+                                       checked>
+                            </div>
+                            {{-- <hr /> --}}
+                            {{-- <div class="d-flex justify-content-between">
                                 <div>
                                     <button class="btn btns bg-green"
                                             id="save"
@@ -150,10 +161,10 @@
                                     <button class="btn btns bg-gray"
                                             id="cancel">Cancel</button>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-12 px-3 bg-white">
-                            <h6 class="fw-bolder">Header Background Image</h6>
+                            </div> --}}
+                        {{-- </div>
+                        <div class="col-12 px-3 bg-white"> --}}
+                            <h6 class="fw-bolder pt-3">Header Background Image</h6>
                             <div class="bg-image-btn">
                                 <span class="btn bg-lightblue btn-file">
                                     Select File<input type="file">

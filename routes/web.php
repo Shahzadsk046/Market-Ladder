@@ -44,6 +44,7 @@ use App\Http\Controllers\EditNavigationsController;
 
 // Admin Users Controller
 use App\Http\Controllers\AdminUsersController;
+use App\Http\Controllers\NewUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -116,4 +117,5 @@ Route::get('/pages/static_page', [StaticPageTypeController::class, 'index'])->na
 Route::get('/navigations', [AdminNavigationsController::class, 'index'])->name('navigations');
 Route::get('/navigations/edit/{id}', [EditNavigationsController::class, 'index'])->name('edit-navigations');
 Route::get('/users', [AdminUsersController::class, 'index'])->name('users');
+Route::get('/users/new_user', [NewUserController::class, 'index'])->name('new_user');
 

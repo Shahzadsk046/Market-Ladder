@@ -23,18 +23,19 @@ body {
     /* width:33%; */
 }
 
-button:hover, .btn:hover{
+button:hover,
+.btn:hover {
     background-color: blue !important;
     /* opacity: .5; */
     color: white !important;
 }
 
-.w-fx{
+.w-fx {
     width: auto;
 }
 
 .bg-green {
-    background-color: rgb(72, 212, 72);
+    background-color: rgb(72, 212, 72) !important;
     color: white !important;
 }
 
@@ -44,8 +45,8 @@ button:hover, .btn:hover{
 }
 
 .bg-red {
-    background-color: rgb(255, 81, 0);
-    color: #fff;
+    background-color: rgb(255, 81, 0) !important;
+    color: #fff !important;
 }
 
 .bg-purple {
@@ -79,7 +80,7 @@ button:hover, .btn:hover{
 }
 
 #example tr > th,
-#example tr > td{
+#example tr > td {
     border-right: none;
     border-left: none;
 }
@@ -91,8 +92,8 @@ button:hover, .btn:hover{
 .btn-file {
     position: relative;
     overflow: hidden;
-  }
-  .btn-file input[type=file] {
+}
+.btn-file input[type="file"] {
     position: absolute;
     top: 0;
     right: 0;
@@ -106,4 +107,4 @@ button:hover, .btn:hover{
     background: white;
     cursor: inherit;
     display: block;
-  }
+}
