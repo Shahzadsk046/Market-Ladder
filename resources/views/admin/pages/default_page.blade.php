@@ -134,7 +134,7 @@
                             <h6 class="fw-bolder">Default Sections</h6>
                             <button class="btn btns bg-green"
                                     id="save"
-                                    onclick="saveBlock()">Add Block</button>
+                                    onclick="addBlock()">Add Block</button>
 
                         </div>
                         <div class="col-12 my-3 p-3 bg-white d-flex justify-content-between">
