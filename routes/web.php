@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PerformanceController;
@@ -24,15 +23,27 @@ use App\Http\Controllers\AnnualMembershipController;
 use App\Http\Controllers\TrialMembershipController;
 
 // Admin Controllers
+use App\Http\Controllers\AdminController;
+
+// Admin Blocks Controller
 use App\Http\Controllers\AdminBlocksController;
-use App\Http\Controllers\AdminFilesController;
-use App\Http\Controllers\AdminPagesController;
-use App\Http\Controllers\AdminNavigationsController;
-use App\Http\Controllers\AdminUsersController;
 use App\Http\Controllers\NewAreaBlocksController;
+
+// Admin Files Controller
+use App\Http\Controllers\AdminFilesController;
+
+// Admin Pages Controller
+use App\Http\Controllers\AdminPagesController;
 use App\Http\Controllers\DefaultPageTypeController;
 use App\Http\Controllers\InternalPageTypeController;
 use App\Http\Controllers\StaticPageTypeController;
+
+// Admin Navigations Controller
+use App\Http\Controllers\AdminNavigationsController;
+use App\Http\Controllers\EditNavigationsController;
+
+// Admin Users Controller
+use App\Http\Controllers\AdminUsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -96,12 +107,13 @@ Route::get('/trial-signup', [TrialMembershipController::class, 'index'])->name('
 // ADMIN ROUTES
 Route::get('/', [AdminController::class, 'index'])->name('admin');
 Route::get('/blocks', [AdminBlocksController::class, 'index'])->name('blocks');
+Route::get('/blocks/new-area', [NewAreaBlocksController::class, 'index'])->name('new-area');
 Route::get('/files', [AdminFilesController::class, 'index'])->name('files');
 Route::get('/pages', [AdminPagesController::class, 'index'])->name('pages');
-Route::get('/navigations', [AdminNavigationsController::class, 'index'])->name('navigations');
-Route::get('/users', [AdminUsersController::class, 'index'])->name('users');
-Route::get('/blocks/new-area', [NewAreaBlocksController::class, 'index'])->name('new-area');
 Route::get('/pages/default_page', [DefaultPageTypeController::class, 'index'])->name('default_page');
 Route::get('/pages/internal_page', [InternalPageTypeController::class, 'index'])->name('internal_page');
 Route::get('/pages/static_page', [StaticPageTypeController::class, 'index'])->name('static_page');
+Route::get('/navigations', [AdminNavigationsController::class, 'index'])->name('navigations');
+Route::get('/navigations/edit/{id}', [EditNavigationsController::class, 'index'])->name('edit-navigations');
+Route::get('/users', [AdminUsersController::class, 'index'])->name('users');
 

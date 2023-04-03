@@ -11,7 +11,7 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-md-12">
-                        <button class="btn btns bg-green"><i class="fas fa-plus"></i> &nbsp; New Area</button>
+                        <a href="navigations/edit/edit-footer-nav"><button class="btn btns bg-green"><i class="fas fa-plus"></i> &nbsp; New Area</button></a>
                     </div>
                 </div>
                 <div class="row my-3 py-2">
@@ -67,9 +67,9 @@
                                     <td>Footer Navigation</td>
                                     <td>footer_nav</td>
                                     <td></td>
-                                    <td><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button>
-                                        <button class="btn btns w-fx bg-lightblue"><i class="fas fa-link"></i>
-                                            Links</button>
+                                    <td><a href="navigations/edit/edit-footer-nav"><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button></a>
+                                        <a href="navigations/edit/edit-footer-nav"><button class="btn btns w-fx bg-lightblue"><i class="fas fa-link"></i>
+                                            Links</button></a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -79,9 +79,9 @@
                                     <td>Footer Navigation</td>
                                     <td>footer_nav</td>
                                     <td></td>
-                                    <td><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button>
-                                        <button class="btn btns w-fx bg-lightblue"><i class="fas fa-link"></i>
-                                            Links</button>
+                                    <td><a href="navigations/edit/edit-footer-nav"><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button></a>
+                                        <a href="navigations/edit/edit-footer-nav"><button class="btn btns w-fx bg-lightblue"><i class="fas fa-link"></i>
+                                            Links</button></a>
                                     </td>
                                 </tr>
                                 <tr>
