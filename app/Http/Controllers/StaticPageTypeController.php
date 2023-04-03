@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AdminFilesController extends Controller
+class StaticPageTypeController extends Controller
 {
     //
     function index(){
-        return view('admin.files.files');
+        return view('admin.pages.static_page');
     }
 }

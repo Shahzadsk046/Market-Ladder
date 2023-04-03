@@ -8,6 +8,6 @@ class AdminUsersController extends Controller
 {
     //
     function index(){
-        return view('admin.users');
+        return view('admin.users.users');
     }
 }

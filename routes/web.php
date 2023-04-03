@@ -22,12 +22,17 @@ use App\Http\Controllers\JoinNowController;
 use App\Http\Controllers\MonthlyMembershipController;
 use App\Http\Controllers\AnnualMembershipController;
 use App\Http\Controllers\TrialMembershipController;
+
+// Admin Controllers
 use App\Http\Controllers\AdminBlocksController;
 use App\Http\Controllers\AdminFilesController;
 use App\Http\Controllers\AdminPagesController;
 use App\Http\Controllers\AdminNavigationsController;
 use App\Http\Controllers\AdminUsersController;
 use App\Http\Controllers\NewAreaBlocksController;
+use App\Http\Controllers\DefaultPageTypeController;
+use App\Http\Controllers\InternalPageTypeController;
+use App\Http\Controllers\StaticPageTypeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -96,4 +101,7 @@ Route::get('/pages', [AdminPagesController::class, 'index'])->name('pages');
 Route::get('/navigations', [AdminNavigationsController::class, 'index'])->name('navigations');
 Route::get('/users', [AdminUsersController::class, 'index'])->name('users');
 Route::get('/blocks/new-area', [NewAreaBlocksController::class, 'index'])->name('new-area');
+Route::get('/pages/default_page', [DefaultPageTypeController::class, 'index'])->name('default_page');
+Route::get('/pages/internal_page', [InternalPageTypeController::class, 'index'])->name('internal_page');
+Route::get('/pages/static_page', [StaticPageTypeController::class, 'index'])->name('static_page');
 

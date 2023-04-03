@@ -8,6 +8,6 @@ class AdminNavigationsController extends Controller
 {
     //
     function index(){
-        return view('admin.navigations');
+        return view('admin.navigations.navigations');
     }
 }

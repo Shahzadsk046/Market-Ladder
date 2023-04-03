@@ -83,3 +83,7 @@ button:hover{
     border-right: none;
     border-left: none;
 }
+
+.form-label {
+    font-weight: bolder;
+}

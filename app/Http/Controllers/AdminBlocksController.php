@@ -8,6 +8,6 @@ class AdminBlocksController extends Controller
 {
     //
     function index(){
-        return view('admin.blocks');
+        return view('admin.blocks.blocks');
     }
 }

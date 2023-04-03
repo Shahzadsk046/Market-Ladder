@@ -8,6 +8,6 @@ class NewAreaBlocksController extends Controller
 {
     //
     function index(){
-        return view('admin.new-area-block');
+        return view('admin.blocks.new-area-block');
     }
 }
