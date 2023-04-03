@@ -11,7 +11,52 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-md-12">
-                        <button class="btn btns bg-green"><i class="fas fa-plus"></i> &nbsp; New Page</button>
+                        {{-- <button class="btn btns bg-green"><i class="fas fa-plus"></i> &nbsp; New Page</button> --}}
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btns bg-green" data-bs-toggle="modal" data-bs-target="#newPageModal">
+                            <i class="fas fa-plus"></i> &nbsp; New Page
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="newPageModal" tabindex="-1" aria-labelledby="newPageModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="newPageModalLabel">What type of page would you like to create?</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                    <ul class="navbar-nav me-auto m-3 mb-lg-0">
+                                        <li class="nav-item">
+                                          <a class="nav-link" aria-current="page" href="/pages/default_page">
+                                            <h6 class="m-1 p-0">Default Page Type</h6>
+                                            <p class="text-muted">Use this type for Only Homepage.</p>
+                                          </a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" aria-current="page" href="/pages/internal_page">
+                                            <h6 class="m-1 p-0">Internal Page Type</h6>
+                                            <p class="text-muted">Use this type for pages except Homepage.</p>
+                                          </a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" aria-current="page" href="/pages/static_page">
+                                            <h6 class="m-1 p-0">Static Page Type</h6>
+                                            <p class="text-muted">Kindly do not use this type its Totally Static.</p>
+                                          </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                {{-- <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div> --}}
+                            </div>
+                            </div>
+                        </div>
                         <button class="btn btns bg-lightblue"><i class="fas fa-table"></i> &nbsp; Table View</button>
                         {{-- Have Some Conditions --}}
                         {{-- <button class="btn btns bg-green"><i class="fas fa-table"></i> &nbsp; Table View</button> --}}
