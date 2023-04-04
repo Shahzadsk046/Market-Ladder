@@ -88,46 +88,180 @@
                 </div>
                 <div class="row my-3 py-2">
                     <div class="col-12">
-                        <ul class="nav nav-tabs">
+                        <ul class="nav nav-tabs"
+                            role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active"
-                                   aria-current="page"
+                                   data-bs-toggle="tab"
                                    href="#general">General</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link"
+                                   data-bs-toggle="tab"
                                    href="#seo">SEO</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link"
+                                   data-bs-toggle="tab"
                                    href="#options">Options</a>
                             </li>
                         </ul>
-                        <div id="general">
-                            <div class="col-12 bg-white p-3">
-                                <form action="/defaultPage"
-                                      method="post">
-                                    <div class="form-row my-3">
-                                        <div class="mb-3">
-                                            <label for="defaultPageTitle"
-                                                   class="form-label">Title <span style="color:red">*</span></label>
-                                            <div class="form-text mb-3">Specify a short description name for this page.</div>
-                                            <input type="text"
-                                                   class="form-control"
-                                                   name="defaultPageTitle"
-                                                   id="defaultPageTitle">
+                        <div class="tab-content">
+                            <div id="general"
+                                 class="tab-pane active">
+                                <div class="col-12 bg-white p-3">
+                                    <form action="/defaultPage"
+                                          method="post">
+                                        <div class="form-row my-3">
+                                            <div class="mb-3">
+                                                <label for="defaultPageTitle"
+                                                       class="form-label">Title <span style="color:red">*</span></label>
+                                                <div class="form-text mb-3">Specify a short description name for this page.
+                                                </div>
+                                                <input type="text"
+                                                       class="form-control"
+                                                       name="defaultPageTitle"
+                                                       id="defaultPageTitle">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="defaultPageSlug"
+                                                       class="form-label">Slug <span style="color:red">*</span></label>
+                                                <div class="form-text mb-3">The slug is used in building the page's URL.
+                                                </div>
+                                                <input type="text"
+                                                       class="form-control"
+                                                       name="defaultPageSlug"
+                                                       id="defaultPageSlug">
+                                            </div>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="defaultPageSlug"
-                                                   class="form-label">Slug <span style="color:red">*</span></label>
-                                            <div class="form-text mb-3">The slug is used in building the page's URL.</div>
-                                            <input type="text"
-                                                   class="form-control"
-                                                   name="defaultPageSlug"
-                                                   id="defaultPageSlug">
+                                    </form>
+                                </div>
+                            </div>
+                            <div id="seo"
+                                 class="tab-pane fade">
+                                <div class="col-12 bg-white p-3">
+                                    <form action="/defaultPage"
+                                          method="post">
+                                        <div class="form-row my-3">
+                                            <div class="mb-3">
+                                                <label for="defaultPageMetaTitle"
+                                                       class="form-label">Meta Title</label>
+                                                <div class="form-text mb-3">Specify the SEO title.
+                                                </div>
+                                                <input type="text"
+                                                       class="form-control"
+                                                       name="defaultPageMetaTitle"
+                                                       id="defaultPageMetaTitle">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="defaultPageMetaDesc"
+                                                       class="form-label">Meta Description</label>
+                                                <div class="form-text mb-3">Specify the SEO description.
+                                                </div>
+                                                <input type="text"
+                                                       class="form-control"
+                                                       name="defaultPageMetaDesc"
+                                                       id="defaultPageMetaDesc">
+                                            </div>
                                         </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
+                            </div>
+                            <div id="options"
+                                 class="tab-pane fade">
+                                <div class="col-12 bg-white p-3">
+                                    <form action="/defaultPage"
+                                          method="post">
+                                        <div class="form-row my-3">
+                                            <div class="mb-3">
+                                                <label for="optionEnabled"
+                                                       class="form-label">Is this page enabled?</label>
+                                                <div class="form-text mb-3">If disabled, you can still access a secure preview link in the control panel.</div>
+                                                <div class="form-check form-switch ms-4">
+                                                    <input class="form-check-input border-success bg-green fs-4"
+                                                           type="checkbox"
+                                                           role="switch"
+                                                           name="optionEnabled"
+                                                           id="optionEnabled"
+                                                           checked>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="optionHomepage"
+                                                       class="form-label">Is this the home page?</label>
+                                                <div class="form-text mb-3">The home page is the default landing page for your website.</div>
+                                                <div class="form-check form-switch ms-4">
+                                                    <input class="form-check-input border-success bg-red fs-4"
+                                                           type="checkbox"
+                                                           role="switch"
+                                                           name="optionHomepage"
+                                                           id="optionHomepage"
+                                                           >
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="optionNavigation"
+                                                       class="form-label">Display this page in navigation?</label>
+                                                <div class="form-text mb-3">Disable to hide this page from page based navigation <strong>structure</strong>.</div>
+                                                <div class="form-check form-switch ms-4">
+                                                    <input class="form-check-input border-success bg-green fs-4"
+                                                           type="checkbox"
+                                                           role="switch"
+                                                           name="optionNavigation"
+                                                           id="optionNavigation"
+                                                           checked>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="optionHidden"
+                                                       class="form-label">Require an exact URI match?</label>
+                                                <div class="form-text mb-3">Disable to allow custom parameters following the URI for this page.</div>
+                                                <div class="form-check form-switch ms-4">
+                                                    <input class="form-check-input border-success bg-green fs-4"
+                                                           type="checkbox"
+                                                           role="switch"
+                                                           name="optionHidden"
+                                                           id="optionHidden"
+                                                           checked>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="optionAllowedRules"
+                                                       class="form-label">Allowed Rules</label>
+                                                <div class="form-text mb-3">Specify which user roles can access this page.
+                                                </div>
+                                                <input type="text"
+                                                       class="form-control"
+                                                       name="optionAllowedRules"
+                                                       id="optionAllowedRules">
+                                                       <small class="text-muted" style="font-size:12px">Separate values with a comma or by pressing 'Enter'.</small>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="optionThemeLayout"
+                                                class="form-label">Theme Layout</label>
+                                                <div class="form-text mb-3">Specify the theme layout to wrap the <strong>page layout</strong> with.
+                                                </div>
+                                                <select class="form-control" name="optionThemeLayout" id="optionThemeLayout">
+                                                    <option value="choose">Choose an option...</option>
+                                                    <option value="light">Light</option>
+                                                    <option value="dark">Dark</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="optionParentPage"
+                                                       class="form-label">Parent Page</label>
+                                                <div class="form-text mb-3">Specify a parent page to organize it within the parent's URI structure.
+                                                </div>
+                                                <button type="button"
+                                                       class="btn btns bg-green"
+                                                       name="optionParentPage"
+                                                       id="optionParentPage"><i class="fas fa-search"></i> Search</button>
+                                                       <br><br>
+                                                       <small class="text-muted">No results.</small>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 my-3 p-3 bg-white">
