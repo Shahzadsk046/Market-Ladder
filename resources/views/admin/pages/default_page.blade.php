@@ -88,30 +88,37 @@
                 </div>
                 <div class="row my-3 py-2">
                     <div class="col-12">
-                        <ul class="nav nav-tabs"
-                            role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active"
-                                   data-bs-toggle="tab"
-                                   href="#general">General</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                   data-bs-toggle="tab"
-                                   href="#seo">SEO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                   data-bs-toggle="tab"
-                                   href="#options">Options</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content">
-                            <div id="general"
-                                 class="tab-pane active">
-                                <div class="col-12 bg-white p-3">
-                                    <form action="/defaultPage"
-                                          method="post">
+                        <form action="/pages/save_default"
+                              method="post">
+                              @csrf
+                              <input type="hidden" name="page_type" value="{{Route::current()->getName()}}">
+                            <ul class="nav nav-tabs"
+                                role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active"
+                                       data-bs-toggle="tab"
+                                       href="#general">General</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                       data-bs-toggle="tab"
+                                       href="#seo">SEO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                       data-bs-toggle="tab"
+                                       href="#options">Options</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="general"
+                                     class="tab-pane active">
+                                    <div class="col-12 bg-white p-3">
+                                        {{-- <form action="/defaultPage"
+                                          method="post"> --}}
+                                        {{-- <input type="text"
+                                               name="page_type"
+                                               value="{{ Route::current()->getName() }}"> --}}
                                         <div class="form-row my-3">
                                             <div class="mb-3">
                                                 <label for="defaultPageTitle"
@@ -134,14 +141,14 @@
                                                        id="defaultPageSlug">
                                             </div>
                                         </div>
-                                    </form>
+                                        {{-- </form> --}}
+                                    </div>
                                 </div>
-                            </div>
-                            <div id="seo"
-                                 class="tab-pane fade">
-                                <div class="col-12 bg-white p-3">
-                                    <form action="/defaultPage"
-                                          method="post">
+                                <div id="seo"
+                                     class="tab-pane fade">
+                                    <div class="col-12 bg-white p-3">
+                                        {{-- <form action="/defaultPage"
+                                          method="post"> --}}
                                         <div class="form-row my-3">
                                             <div class="mb-3">
                                                 <label for="defaultPageMetaTitle"
@@ -164,19 +171,20 @@
                                                        id="defaultPageMetaDesc">
                                             </div>
                                         </div>
-                                    </form>
+                                        {{-- </form> --}}
+                                    </div>
                                 </div>
-                            </div>
-                            <div id="options"
-                                 class="tab-pane fade">
-                                <div class="col-12 bg-white p-3">
-                                    <form action="/defaultPage"
-                                          method="post">
+                                <div id="options"
+                                     class="tab-pane fade">
+                                    <div class="col-12 bg-white p-3">
+                                        {{-- <form action="/defaultPage"
+                                          method="post"> --}}
                                         <div class="form-row my-3">
                                             <div class="mb-3">
                                                 <label for="optionEnabled"
                                                        class="form-label">Is this page enabled?</label>
-                                                <div class="form-text mb-3">If disabled, you can still access a secure preview link in the control panel.</div>
+                                                <div class="form-text mb-3">If disabled, you can still access a secure
+                                                    preview link in the control panel.</div>
                                                 <div class="form-check form-switch ms-4">
                                                     <input class="form-check-input border-success bg-green fs-4"
                                                            type="checkbox"
@@ -189,30 +197,34 @@
                                             <div class="mb-3">
                                                 <label for="optionPublishTime"
                                                        class="form-label">Publish Date/Time</label>
-                                                <div class="form-text mb-3">Specify the publish date/time for this page.</div>
-                                                    <div class="input-group mb-3">
-                                                        <span class="input-group-text">x</span>
-                                                        <input type="datetime-local" class="form-control" aria-label="Publish Date/Time">
-                                                        <span class="input-group-text">UTC</span>
-                                                      </div>
+                                                <div class="form-text mb-3">Specify the publish date/time for this page.
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">x</span>
+                                                    <input type="datetime-local"
+                                                           class="form-control"
+                                                           aria-label="Publish Date/Time">
+                                                    <span class="input-group-text">UTC</span>
+                                                </div>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="optionHomepage"
                                                        class="form-label">Is this the home page?</label>
-                                                <div class="form-text mb-3">The home page is the default landing page for your website.</div>
+                                                <div class="form-text mb-3">The home page is the default landing page for
+                                                    your website.</div>
                                                 <div class="form-check form-switch ms-4">
                                                     <input class="form-check-input border-success bg-red fs-4"
                                                            type="checkbox"
                                                            role="switch"
                                                            name="optionHomepage"
-                                                           id="optionHomepage"
-                                                           >
+                                                           id="optionHomepage">
                                                 </div>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="optionNavigation"
                                                        class="form-label">Display this page in navigation?</label>
-                                                <div class="form-text mb-3">Disable to hide this page from page based navigation <strong>structure</strong>.</div>
+                                                <div class="form-text mb-3">Disable to hide this page from page based
+                                                    navigation <strong>structure</strong>.</div>
                                                 <div class="form-check form-switch ms-4">
                                                     <input class="form-check-input border-success bg-green fs-4"
                                                            type="checkbox"
@@ -223,15 +235,16 @@
                                                 </div>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="optionHidden"
+                                                <label for="optionExacturl"
                                                        class="form-label">Require an exact URI match?</label>
-                                                <div class="form-text mb-3">Disable to allow custom parameters following the URI for this page.</div>
+                                                <div class="form-text mb-3">Disable to allow custom parameters following
+                                                    the URI for this page.</div>
                                                 <div class="form-check form-switch ms-4">
                                                     <input class="form-check-input border-success bg-green fs-4"
                                                            type="checkbox"
                                                            role="switch"
-                                                           name="optionHidden"
-                                                           id="optionHidden"
+                                                           name="optionExacturl"
+                                                           id="optionExacturl"
                                                            checked>
                                                 </div>
                                             </div>
@@ -244,14 +257,19 @@
                                                        class="form-control"
                                                        name="optionAllowedRules"
                                                        id="optionAllowedRules">
-                                                       <small class="text-muted" style="font-size:12px">Separate values with a comma or by pressing 'Enter'.</small>
+                                                <small class="text-muted"
+                                                       style="font-size:12px">Separate values with a comma or by pressing
+                                                    'Enter'.</small>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="optionThemeLayout"
-                                                class="form-label">Theme Layout</label>
-                                                <div class="form-text mb-3">Specify the theme layout to wrap the <strong>page layout</strong> with.
+                                                       class="form-label">Theme Layout</label>
+                                                <div class="form-text mb-3">Specify the theme layout to wrap the
+                                                    <strong>page layout</strong> with.
                                                 </div>
-                                                <select class="form-control" name="optionThemeLayout" id="optionThemeLayout">
+                                                <select class="form-control"
+                                                        name="optionThemeLayout"
+                                                        id="optionThemeLayout">
                                                     <option value="choose">Choose an option...</option>
                                                     <option value="light">Light</option>
                                                     <option value="dark">Dark</option>
@@ -260,42 +278,51 @@
                                             <div class="mb-3">
                                                 <label for="optionParentPage"
                                                        class="form-label">Parent Page</label>
-                                                <div class="form-text mb-3">Specify a parent page to organize it within the parent's URI structure.
+                                                <div class="form-text mb-3">Specify a parent page to organize it within the
+                                                    parent's URI structure.
                                                 </div>
                                                 <button type="button"
-                                                       class="btn btns bg-green"
-                                                       name="optionParentPage"
-                                                       id="optionParentPage"><i class="fas fa-search"></i> Search</button>
-                                                       <br><br>
-                                                       <small class="text-muted">No results.</small>
+                                                        class="btn btns bg-green"
+                                                        name="optionParentPage"
+                                                        id="optionParentPage"><i class="fas fa-search"></i>
+                                                    Search</button>
+                                                <br><br>
+                                                <small class="text-muted">No results.</small>
                                             </div>
                                         </div>
-                                    </form>
+                                        {{-- </form> --}}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 my-3 p-3 bg-white">
-                            <h6 class="fw-bolder">Default Sections</h6>
-                            <button class="btn btns bg-green"
-                                    id="save"
-                                    onclick="addBlock()">Add Block</button>
+                            <div class="col-12 my-3 p-3 bg-white">
+                                <h6 class="fw-bolder">Default Sections</h6>
+                                <button class="btn btns bg-green"
+                                id="addBlock" name="addBlock"
+                                {{-- onclick="addBlock()" --}}
+                                >Add Block</button>
 
-                        </div>
-                        <div class="col-12 my-3 p-3 bg-white d-flex justify-content-between">
-                            <div>
-                                <button class="btn btns bg-green"
-                                        id="save"
-                                        onclick="saveBlock()"><i class="fa-solid fa-floppy-disk"></i> &nbsp;Save</button>
-                                <button class="btn btns bg-green"
-                                        id="create"
-                                        onclick="createBlock()"><i class="fa-solid fa-floppy-disk"></i> &nbsp;Save &
-                                    Create</button>
                             </div>
-                            <div>
-                                <button class="btn btns bg-gray"
-                                        id="cancel">Cancel</button>
+                            <div class="col-12 my-3 p-3 bg-white d-flex justify-content-between">
+                                <div>
+                                    <button type="submit"
+                                            class="btn btns bg-green"
+                                            id="save"
+                                            {{-- onclick="saveBlock()" --}}
+                                            ><i class="fa-solid fa-floppy-disk"></i>
+                                        &nbsp;Save</button>
+                                    <button type="submit"
+                                            class="btn btns bg-green"
+                                            id="create"
+                                            {{-- onclick="createBlock()" --}}
+                                            ><i class="fa-solid fa-floppy-disk"></i> &nbsp;Save &
+                                        Create</button>
+                                </div>
+                                <div>
+                                    <button class="btn btns bg-gray"
+                                            id="cancel">Cancel</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

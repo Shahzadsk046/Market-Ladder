@@ -34,7 +34,7 @@ use App\Http\Controllers\AdminFilesController;
 
 // Admin Pages Controller
 use App\Http\Controllers\AdminPagesController;
-use App\Http\Controllers\DefaultPageTypeController;
+// use App\Http\Controllers\DefaultPageTypeController;
 use App\Http\Controllers\InternalPageTypeController;
 use App\Http\Controllers\StaticPageTypeController;
 
@@ -107,18 +107,29 @@ Route::get('/trial-signup', [TrialMembershipController::class, 'index'])->name('
 
 // ADMIN ROUTES
 Route::get('/', [AdminController::class, 'index'])->name('admin');
+
+// Blocks Routes
 Route::get('/blocks', [AdminBlocksController::class, 'index'])->name('blocks');
 Route::get('/blocks/edit/{id}', [AdminBlocksController::class, 'edit'])->name('edit-blocks');
 Route::get('/blocks/view', [AdminBlocksController::class, 'show'])->name('view-blocks');
 Route::get('/blocks/new-area', [NewAreaBlocksController::class, 'index'])->name('new-area');
+
+// Files Routes
 Route::get('/files', [AdminFilesController::class, 'index'])->name('files');
+
+// Pages Routes
 Route::get('/pages', [AdminPagesController::class, 'index'])->name('pages');
-Route::get('/pages/default_page', [DefaultPageTypeController::class, 'index'])->name('default_page');
+Route::post('/pages/save_default', [AdminPagesController::class, 'create'])->name('add_default_page');
+Route::get('/pages/default_page', [AdminPagesController::class, 'defaultIndex'])->name('default_page');
 Route::get('/pages/internal_page', [InternalPageTypeController::class, 'index'])->name('internal_page');
 Route::get('/pages/static_page', [StaticPageTypeController::class, 'index'])->name('static_page');
+
+// Navigations Routes
 Route::get('/navigations', [AdminNavigationsController::class, 'index'])->name('navigations');
 // Route::resource('navigations', AdminNavigationsController::class);
 Route::get('/navigations/edit/{id}', [AdminNavigationsController::class, 'edit'])->name('edit-navigations');
+
+// Users Routes
 Route::get('/users', [AdminUsersController::class, 'index'])->name('users');
 Route::get('/users/new_user', [NewUserController::class, 'index'])->name('new_user');
 

@@ -11,8 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('navigations', function (Blueprint $table) {
+        Schema::create('default_pages', function (Blueprint $table) {
             $table->id();
+            $table->string('name', 255)->nullable()->default('text');
+            $table->bigInteger('block_id')->unsigned()->index()->nullable();
+            $table->foreign('block_id')->references('id')->on('blocks')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -22,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('navigations');
+        Schema::dropIfExists('default_pages');
     }
 };
