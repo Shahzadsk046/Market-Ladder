@@ -189,6 +189,16 @@
                                                 </div>
                                             </div>
                                             <div class="mb-3">
+                                                <label for="optionPublishTime"
+                                                       class="form-label">Publish Date/Time</label>
+                                                <div class="form-text mb-3">Specify the publish date/time for this page.</div>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text">x</span>
+                                                        <input type="datetime-local" class="form-control" aria-label="Publish Date/Time">
+                                                        <span class="input-group-text">UTC</span>
+                                                      </div>
+                                            </div>
+                                            <div class="mb-3">
                                                 <label for="optionHomepage"
                                                        class="form-label">Is this the home page?</label>
                                                 <div class="form-text mb-3">The home page is the default landing page for
