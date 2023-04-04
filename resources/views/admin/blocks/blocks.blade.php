@@ -54,7 +54,7 @@
                                     <td>This banner is used in end of all internal Pages, so changes made here will be
                                         reflected on every internal page.</td>
                                     <td><a href="blocks/edit/id1"><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button></a>
-                                        <a href="blocks/edit/id1"><button class="btn btns w-fx bg-purple"><i class="fas fa-wand-magic-sparkles"></i>
+                                        <a href="blocks/view"><button class="btn btns w-fx bg-purple"><i class="fas fa-wand-magic-sparkles"></i>
                                             Blocks</button></a>
                                     </td>
                                 </tr>

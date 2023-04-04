@@ -6,6 +6,8 @@ window.addEventListener('DOMContentLoaded', event => {
     if (datatablesSimple) {
         new simpleDatatables.DataTable(datatablesSimple, {
             paging: false,
+            sortable: false,
+            fixedColumns: false
         });
     }
 });

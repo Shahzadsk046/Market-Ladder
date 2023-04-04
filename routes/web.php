@@ -109,6 +109,7 @@ Route::get('/trial-signup', [TrialMembershipController::class, 'index'])->name('
 Route::get('/', [AdminController::class, 'index'])->name('admin');
 Route::get('/blocks', [AdminBlocksController::class, 'index'])->name('blocks');
 Route::get('/blocks/edit/{id}', [AdminBlocksController::class, 'edit'])->name('edit-blocks');
+Route::get('/blocks/view', [AdminBlocksController::class, 'show'])->name('view-blocks');
 Route::get('/blocks/new-area', [NewAreaBlocksController::class, 'index'])->name('new-area');
 Route::get('/files', [AdminFilesController::class, 'index'])->name('files');
 Route::get('/pages', [AdminPagesController::class, 'index'])->name('pages');
