@@ -40,7 +40,7 @@ use App\Http\Controllers\StaticPageTypeController;
 
 // Admin Navigations Controller
 use App\Http\Controllers\AdminNavigationsController;
-use App\Http\Controllers\EditNavigationsController;
+// use App\Http\Controllers\EditNavigationsController;
 
 // Admin Users Controller
 use App\Http\Controllers\AdminUsersController;
@@ -108,6 +108,7 @@ Route::get('/trial-signup', [TrialMembershipController::class, 'index'])->name('
 // ADMIN ROUTES
 Route::get('/', [AdminController::class, 'index'])->name('admin');
 Route::get('/blocks', [AdminBlocksController::class, 'index'])->name('blocks');
+Route::get('/blocks/edit/{id}', [AdminBlocksController::class, 'edit'])->name('edit-blocks');
 Route::get('/blocks/new-area', [NewAreaBlocksController::class, 'index'])->name('new-area');
 Route::get('/files', [AdminFilesController::class, 'index'])->name('files');
 Route::get('/pages', [AdminPagesController::class, 'index'])->name('pages');
@@ -115,7 +116,8 @@ Route::get('/pages/default_page', [DefaultPageTypeController::class, 'index'])->
 Route::get('/pages/internal_page', [InternalPageTypeController::class, 'index'])->name('internal_page');
 Route::get('/pages/static_page', [StaticPageTypeController::class, 'index'])->name('static_page');
 Route::get('/navigations', [AdminNavigationsController::class, 'index'])->name('navigations');
-Route::get('/navigations/edit/{id}', [EditNavigationsController::class, 'index'])->name('edit-navigations');
+// Route::resource('navigations', AdminNavigationsController::class);
+Route::get('/navigations/edit/{id}', [AdminNavigationsController::class, 'edit'])->name('edit-navigations');
 Route::get('/users', [AdminUsersController::class, 'index'])->name('users');
 Route::get('/users/new_user', [NewUserController::class, 'index'])->name('new_user');
 
