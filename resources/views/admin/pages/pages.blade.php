@@ -129,36 +129,21 @@
                             <tbody>
                                 @foreach ($pages as $page)
                                     <tr>
-                                        <td>kj{{ $page['id'] }}</td>
-                                        <td>{{ $page['title'] }}</td>
-                                        <td>{{ $page['slug'] }}</td>
-                                        <td>{{ $page['status'] }}</td>
+                                        <td><input type="checkbox"
+                                                   name="all_data"
+                                                   id="all_data"></td>
+                                        <td>{!! $page['title'] == 'Home'
+                                            ? 'Home <i class="fas fa-home text-success"></i> <br> <span class="text-muted">' . $page['slug'] . '</span>'
+                                            : ($page['title'] == '404'
+                                                ? '404 <i class="fas fa-link-slash text-muted"></i> <br> <span class="text-muted">' . $page['slug'] . '</span>'
+                                                : $page['title'] . '<br> <span class="text-muted">/' . $page['slug'] . '</span>') !!}</td>
+                                        <td>{{ $page['page_type'] }}</td>
+                                        <td><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button>
+                                            <button class="btn btns w-fx bg-lightblue"><i class="fas fa-eye"></i>
+                                                View</button>
+                                        </td>
                                     </tr>
                                 @endforeach
-                                <tr>
-                                    <td><input type="checkbox"
-                                               name="all_data"
-                                               id="all_data"></td>
-                                    <td>Home <i class="fas fa-home text-success"></i> <br> <span class="text-muted">Link
-                                            (/)</span></td>
-                                    <td>Default Page Type</td>
-                                    <td><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button>
-                                        <button class="btn btns w-fx bg-lightblue"><i class="fas fa-eye"></i>
-                                            View</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox"
-                                               name="all_data"
-                                               id="all_data"></td>
-                                    <td>404 <i class="fa-solid fa-link-simple-slash"></i> <br> <span class="text-muted">Link
-                                            (/404)</span></td>
-                                    <td>Default Page Type</td>
-                                    <td><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button>
-                                        <button class="btn btns w-fx bg-lightblue"><i class="fas fa-eye"></i>
-                                            View</button>
-                                    </td>
-                                </tr>
                                 <tr>
                                     <td><button class="btn btns bg-pink"
                                                 style="width: 100px"><i class="fas fa-trash"></i> Delete</button></td>

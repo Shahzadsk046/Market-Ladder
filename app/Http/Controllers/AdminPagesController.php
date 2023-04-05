@@ -54,7 +54,7 @@ class AdminPagesController extends Controller
         $default_page = new DefaultPage;
         $page->title = $req->defaultPageTitle;
         $page->slug = $req->defaultPageSlug;
-        $page->page_type = $req->page_type;
+        $page->page_type = ($req->page_type == "internal_page" ? "Internal Page Type" : ($req->page_type == "static_page" ? "Static Page Type" : "Default Page Type") );
         $page->meta_title = $req->defaultPageMetaTitle;
         $page->meta_desc = $req->defaultPageMetaDesc;
         $page->status = ($req->optionEnabled == "on" ? 1 : 0);
