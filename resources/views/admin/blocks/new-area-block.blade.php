@@ -36,9 +36,10 @@
                     <div class="col-12">
                         <div class="container">
                             <div class="row">
-                                <div class="col-12 bg-white">
-                                    <form action="/block"
-                                          method="post">
+                                <form action="/blocks/save_block"
+                                      method="post">
+                                      @csrf
+                                    <div class="col-12 p-3 bg-white">
                                         <div class="form-row my-3">
                                             <div class="mb-3">
                                                 <label for="blockname"
@@ -54,7 +55,8 @@
                                                 <label for="blockslug"
                                                        class="form-label">Slug <span style="color:red">*</span></label>
                                                 <div id="emailHelp"
-                                                     class="form-text mb-3">The slug will be used when display blocks with the plugin.</div>
+                                                     class="form-text mb-3">The slug will be used when display blocks with
+                                                    the plugin.</div>
                                                 <input type="text"
                                                        class="form-control"
                                                        name="blockslug"
@@ -64,26 +66,35 @@
                                                 <label for="blockdesc"
                                                        class="form-label">Description</label>
                                                 <div id="emailHelp"
-                                                     class="form-text mb-3">Briefly describe the area and how it will be used.</div>
+                                                     class="form-text mb-3">Briefly describe the area and how it will be
+                                                    used.</div>
                                                 <textarea class="form-control"
-                                                       name="blockdesc"
-                                                       id="blockdesc"
-                                                       style="height: 14vw; resize:none"
-                                                       >
+                                                          name="blockdesc"
+                                                          id="blockdesc"
+                                                          style="height: 14vw; resize:none">
                                                 </textarea>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                                <div class="col-12 my-3 py-3 bg-white d-flex justify-content-between">
-                                    <div>
-                                        <button class="btn btns bg-green" id="save" onclick="saveBlock()"><i class="fa-solid fa-floppy-disk"></i> &nbsp;Save</button>
-                                        <button class="btn btns bg-green" id="create" onclick="createBlock()"><i class="fa-solid fa-floppy-disk"></i> &nbsp;Save & Create</button>
                                     </div>
-                                    <div>
-                                        <button class="btn btns bg-gray" id="cancel">Cancel</button>
+                                    <div class="col-12 my-3 py-3 bg-white d-flex justify-content-between">
+                                        <div>
+                                            <button type="submit"
+                                                    class="btn btns bg-green"
+                                                    id="save"
+                                                    onclick="saveBlock()"><i class="fa-solid fa-floppy-disk"></i>
+                                                &nbsp;Save</button>
+                                            <button type="submit"
+                                                    class="btn btns bg-green"
+                                                    id="create"
+                                                    onclick="createBlock()"><i class="fa-solid fa-floppy-disk"></i>
+                                                &nbsp;Save & Create</button>
+                                        </div>
+                                        <div>
+                                            <button class="btn btns bg-gray"
+                                                    id="cancel">Cancel</button>
+                                        </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>

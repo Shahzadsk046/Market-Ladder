@@ -112,8 +112,11 @@ Route::get('/', [AdminController::class, 'index'])->name('admin');
 // Blocks Routes
 Route::get('/blocks', [AdminBlocksController::class, 'index'])->name('blocks');
 Route::get('/blocks/edit/{id}', [AdminBlocksController::class, 'edit'])->name('edit-blocks');
-Route::get('/blocks/view', [AdminBlocksController::class, 'show'])->name('view-blocks');
+Route::put('/blocks/update_block', [AdminBlocksController::class, 'update'])->name('update-block');
+Route::get('/blocks/view/{slug}', [AdminBlocksController::class, 'show'])->name('view-blocks');
+Route::post('/blocks/save_block', [AdminBlocksController::class, 'create'])->name('save-block');
 Route::get('/blocks/new-area', [NewAreaBlocksController::class, 'index'])->name('new-area');
+Route::post('/blocks/delete_block', [AdminBlocksController::class, 'destroy'])->name('delete-block');
 
 // Files Routes
 Route::get('/files', [AdminFilesController::class, 'index'])->name('files');

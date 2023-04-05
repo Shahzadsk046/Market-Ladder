@@ -11,7 +11,9 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="/blocks/new-area" class="text-decoration-none"><button class="btn btns bg-green"><i class="fas fa-plus"></i> &nbsp; New Area</button></a>
+                        <a href="/blocks/new-area"
+                           class="text-decoration-none"><button class="btn btns bg-green"><i class="fas fa-plus"></i> &nbsp;
+                                New Area</button></a>
                     </div>
                 </div>
                 <div class="row my-3 py-2">
@@ -31,6 +33,9 @@
                 </div>
                 <div class="row my-3 py-2">
                     <div class="col-12">
+                        <form action="/blocks/delete_block"
+                              method="post">
+                            @csrf
                         <table id="example"
                                class="bg-white">
                             <thead>
@@ -45,25 +50,37 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td><input type="checkbox"
-                                               name="all_data"
-                                               id="all_data"></td>
-                                    <td>Balloon Banner</td>
-                                    <td>balloon-banner</td>
-                                    <td>This banner is used in end of all internal Pages, so changes made here will be
-                                        reflected on every internal page.</td>
-                                    <td><a href="blocks/edit/id1"><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button></a>
-                                        <a href="blocks/view"><button class="btn btns w-fx bg-purple"><i class="fas fa-wand-magic-sparkles"></i>
-                                            Blocks</button></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><button class="btn btns bg-pink"
-                                                style="width: 100px"><i class="fas fa-trash"></i> Delete</button></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    @foreach ($blocks as $block)
+                                        <tr>
+                                            <td><input type="checkbox"
+                                                       name="ids[{{ $block['id'] }}]"
+                                                       id="ids[{{ $block['id'] }}]"
+                                                       value="{{ $block['id'] }}"></td>
+                                            <td>{{ $block['name'] }}</td>
+                                            <td>{{ $block['slug'] }}</td>
+                                            <td>{{ $block['description'] }}</td>
+                                            <td>
+                                                <a href="blocks/edit/{{ $block['id'] }}"><button type="button"
+                                                            class="btn btns w-fx bg-red"><i class="fas fa-pen"></i>
+                                                        Edit</button></a>
+                                                <a href="blocks/view/{{ $block['slug'] }}"><button type="button"
+                                                            class="btn btns w-fx bg-purple"><i
+                                                           class="fas fa-wand-magic-sparkles"></i>
+                                                        Blocks</button></a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                    <tr>
+                                        <td><button type="submit" class="btn btns bg-pink"
+                                            style="width: 100px"><i class="fas fa-trash"></i> Delete</button></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
                     </div>
                 </div>
             </div>
