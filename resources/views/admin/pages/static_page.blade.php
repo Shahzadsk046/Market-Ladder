@@ -88,7 +88,7 @@
                 </div>
                 <div class="row my-3 py-2">
                     <div class="col-12">
-                        <form action="/save_static"
+                        <form action="/pages/save_static"
                               method="post">
                               @csrf
                               <input type="hidden" name="page_type" value="{{Route::current()->getName()}}">
@@ -118,24 +118,24 @@
                                           method="post"> --}}
                                         <div class="form-row my-3">
                                             <div class="mb-3">
-                                                <label for="defaultPageTitle"
+                                                <label for="staticPageTitle"
                                                        class="form-label">Title <span style="color:red">*</span></label>
                                                 <div class="form-text mb-3">Specify a short description name for this page.
                                                 </div>
                                                 <input type="text"
                                                        class="form-control"
-                                                       name="defaultPageTitle"
-                                                       id="defaultPageTitle">
+                                                       name="staticPageTitle"
+                                                       id="staticPageTitle">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="defaultPageSlug"
+                                                <label for="staticPageSlug"
                                                        class="form-label">Slug <span style="color:red">*</span></label>
                                                 <div class="form-text mb-3">The slug is used in building the page's URL.
                                                 </div>
                                                 <input type="text"
                                                        class="form-control"
-                                                       name="defaultPageSlug"
-                                                       id="defaultPageSlug">
+                                                       name="staticPageSlug"
+                                                       id="staticPageSlug">
                                             </div>
                                         </div>
                                         {{-- </form> --}}
@@ -148,24 +148,24 @@
                                           method="post"> --}}
                                         <div class="form-row my-3">
                                             <div class="mb-3">
-                                                <label for="defaultPageMetaTitle"
+                                                <label for="staticPageMetaTitle"
                                                        class="form-label">Meta Title</label>
                                                 <div class="form-text mb-3">Specify the SEO title.
                                                 </div>
                                                 <input type="text"
                                                        class="form-control"
-                                                       name="defaultPageMetaTitle"
-                                                       id="defaultPageMetaTitle">
+                                                       name="staticPageMetaTitle"
+                                                       id="staticPageMetaTitle">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="defaultPageMetaDesc"
+                                                <label for="staticPageMetaDesc"
                                                        class="form-label">Meta Description</label>
                                                 <div class="form-text mb-3">Specify the SEO description.
                                                 </div>
                                                 <input type="text"
                                                        class="form-control"
-                                                       name="defaultPageMetaDesc"
-                                                       id="defaultPageMetaDesc">
+                                                       name="staticPageMetaDesc"
+                                                       id="staticPageMetaDesc">
                                             </div>
                                         </div>
                                         {{-- </form> --}}
@@ -201,6 +201,8 @@
                                                     <span class="input-group-text">x</span>
                                                     <input type="datetime-local"
                                                            class="form-control"
+                                                           name="optionPublishTime"
+                                                           id="optionPublishTime"
                                                            aria-label="Publish Date/Time">
                                                     <span class="input-group-text">UTC</span>
                                                 </div>
@@ -310,7 +312,7 @@
                                 <h6 class="fw-bolder pt-3">Header Background Image</h6>
                                 <div class="bg-image-btn">
                                     <span class="btn bg-lightblue btn-file">
-                                        Select File<input type="file">
+                                        Select File<input type="file" name="header_bg_image" id="header_bg_image">
                                     </span>
                                     <button class="btn btns bg-green">Upload</button>
                                     <p class="py-3">No File Selected</p>

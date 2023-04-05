@@ -120,6 +120,11 @@ class AdminPagesController extends Controller
         $page->theme = ($req->optionThemeLayout  == "Dark" ? 1 : 0);
         $page->parent_page = ($req->optionParentPage == "on" ? 1 : 0);
         $static_page->block_id = $req->block_id;
+        $static_page->visibility = ($req->displayHeader == "on" ? 1 : 0);
+        $static_page->file_path = $req->header_bg_image;
+        $static_page->heading_text = $req->headerHeading;
+        $static_page->paragraph_text = $req->headerPara;
+        $static_page->banner = $req->banner;
         $page->save();
         $static_page->save();
         return redirect('pages');
