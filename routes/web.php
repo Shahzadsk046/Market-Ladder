@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PerformanceController;
@@ -119,10 +120,12 @@ Route::get('/files', [AdminFilesController::class, 'index'])->name('files');
 
 // Pages Routes
 Route::get('/pages', [AdminPagesController::class, 'index'])->name('pages');
-Route::post('/pages/save_default', [AdminPagesController::class, 'create'])->name('add_default_page');
+Route::post('/pages/save_default', [AdminPagesController::class, 'createDefault'])->name('save_default_page');
 Route::get('/pages/default_page', [AdminPagesController::class, 'defaultIndex'])->name('default_page');
-Route::get('/pages/internal_page', [InternalPageTypeController::class, 'index'])->name('internal_page');
-Route::get('/pages/static_page', [StaticPageTypeController::class, 'index'])->name('static_page');
+Route::post('/pages/save_internal', [AdminPagesController::class, 'createInternal'])->name('save_internal_page');
+Route::get('/pages/internal_page', [InternalPageTypeController::class, 'internalIndex'])->name('internal_page');
+Route::post('/pages/save_static', [AdminPagesController::class, 'createStatic'])->name('save_static_page');
+Route::get('/pages/static_page', [StaticPageTypeController::class, 'staticIndex'])->name('static_page');
 
 // Navigations Routes
 Route::get('/navigations', [AdminNavigationsController::class, 'index'])->name('navigations');

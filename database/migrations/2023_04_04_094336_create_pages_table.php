@@ -19,6 +19,9 @@ return new class extends Migration
             $table->string('meta_desc');
             $table->boolean('status')->nullable()->default(true);
             $table->dateTime('publish_time');
+            // $table->timestamps();
+            // $table->timestamp('publish_time');
+            // $table->dateTime('publish_time')->nullable()->default(new DateTime());
             $table->boolean('homepage')->nullable()->default(false);
             $table->boolean('navigation')->nullable()->default(true);
             $table->boolean('exact_url')->nullable()->default(true);

@@ -17,33 +17,37 @@ class AdminPagesController extends Controller
     {
         //
         $page = Page::all();
-        return view('admin.pages.pages', ['page'=>$page]);
+        return view('admin.pages.pages', ['pages' => $page]);
     }
 
-        public function defaultIndex()
-        {
-            //
-            $page = DefaultPage::all();
-            return view('admin.pages.default_page', ['defaultpage'=>$page]);
-        }
+    public function defaultIndex()
+    {
+        //
+        $page = DefaultPage::all();
+        return view('admin.pages.default_page', ['defaultpage' => $page]);
+    }
 
     public function internalIndex()
     {
         //
         $page = InternalPage::all();
-        return view('admin.pages.internal_page', ['page'=>$page]);
+        return view('admin.pages.internal_page', ['page' => $page]);
     }
     public function staticIndex()
     {
         //
         $page = StaticPage::all();
-        return view('admin.pages.static_page', ['page'=>$page]);
+        return view('admin.pages.static_page', ['page' => $page]);
     }
 
     /**
      * Show the form for creating a new resource.
      */
     public function create(Request $req)
+    {
+        //
+    }
+    public function createDefault(Request $req)
     {
         //
         $page = new Page;
@@ -53,17 +57,18 @@ class AdminPagesController extends Controller
         $page->page_type = $req->page_type;
         $page->meta_title = $req->defaultPageMetaTitle;
         $page->meta_desc = $req->defaultPageMetaDesc;
-        $page->status = $req->optionEnabled;
-        $page->publish_time = $req->optionPublishTime;
-        $page->homepage = $req->optionHomepage;
-        $page->navigation = $req->optionNavigation;
-        $page->exact_url = $req->optionExacturl;
+        $page->status = ($req->optionEnabled == "on" ? 1 : 0);
+        $page->publish_time = \Carbon\Carbon::parse($req->optionPublishTime)->format('Y-m-d H:i:s') ;
+        $page->homepage = ($req->optionHomepage == "on" ? 1 : 0);
+        $page->navigation = ($req->optionNavigation  == "on" ? 1 : 0);
+        $page->exact_url = ($req->optionExacturl  == "on" ? 1 : 0);
         $page->rules = $req->optionAllowedRules;
-        $page->theme = $req->optionThemeLayout;
-        $page->parent_page = $req->optionParentPage;
+        $page->theme = ($req->optionThemeLayout  == "Dark" ? 1 : 0);
+        $page->parent_page = ($req->optionParentPage  == "on" ? 1 : 0);
         $default_page->block_id = $req->block_id;
         $page->save();
         $default_page->save();
+        return redirect('pages');
     }
 
     /**

@@ -127,7 +127,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($defaultpage as $page)
+                                @foreach ($pages as $page)
                                     <tr>
                                         <td>kj{{ $page['id'] }}</td>
                                         <td>{{ $page['title'] }}</td>

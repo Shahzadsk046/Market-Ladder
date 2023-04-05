@@ -203,7 +203,9 @@
                                                     <span class="input-group-text">x</span>
                                                     <input type="datetime-local"
                                                            class="form-control"
-                                                           aria-label="Publish Date/Time">
+                                                           name="optionPublishTime"
+                                                           id="optionPublishTime"
+                                                           aria-label="Publish Date/Time" />
                                                     <span class="input-group-text">UTC</span>
                                                 </div>
                                             </div>
@@ -296,11 +298,7 @@
                             </div>
                             <div class="col-12 my-3 p-3 bg-white">
                                 <h6 class="fw-bolder">Default Sections</h6>
-                                <button class="btn btns bg-green"
-                                id="addBlock" name="addBlock"
-                                {{-- onclick="addBlock()" --}}
-                                >Add Block</button>
-
+                                <input type="button" class="btn btns bg-green" id="addBlock" name="addBlock" {{-- onclick="addBlock()" --}} value="Add Block" />
                             </div>
                             <div class="col-12 my-3 p-3 bg-white d-flex justify-content-between">
                                 <div>
