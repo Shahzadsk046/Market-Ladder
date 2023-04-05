@@ -138,9 +138,9 @@
                                                 ? '404 <i class="fas fa-link-slash text-muted"></i> <br> <span class="text-muted">' . $page['slug'] . '</span>'
                                                 : $page['title'] . '<br> <span class="text-muted">/' . $page['slug'] . '</span>') !!}</td>
                                         <td>{{ $page['page_type'] }}</td>
-                                        <td><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button>
-                                            <button class="btn btns w-fx bg-lightblue"><i class="fas fa-eye"></i>
-                                                View</button>
+                                        <td><a href="/pages/edit/{{$page['id']}}"><button class="btn btns w-fx bg-red"><i class="fas fa-pen"></i> Edit</button></a>
+                                            <a href="/{{$page['slug']}}"><button class="btn btns w-fx bg-lightblue"><i class="fas fa-eye"></i>
+                                                View</button></a>
                                         </td>
                                     </tr>
                                 @endforeach

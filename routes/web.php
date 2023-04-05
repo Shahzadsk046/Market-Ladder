@@ -90,8 +90,8 @@ Route::get('/about/about', [AboutController::class, 'index'])->name('about');
 Route::get('/about/performance', [PerformanceController::class, 'index'])->name('performance');
 Route::get('/about/about-founder', [FounderController::class, 'index'])->name('about-founder');
 Route::get('/swing-trading/compounding-magic', [CompoundController::class, 'index'])->name('compounding-magic');
-Route::get('/swing-trading/swing-trading-with-etf', [SwingTradingETFController::class, 'index'])->name('swing-trading-with-etf');
-Route::get('/swing-trading/what-are-etf', [WhatAreETFsController::class, 'index'])->name('what-are-etf');
+Route::get('/swing-trading-etf', [SwingTradingETFController::class, 'index'])->name('swing-trading-with-etf');
+Route::get('/what-are-etfs', [WhatAreETFsController::class, 'index'])->name('what-are-etf');
 Route::get('/fyi/faq', [FAQController::class, 'index'])->name('faq');
 Route::get('/fyi/contact', [ContactUsController::class, 'index'])->name('contact');
 Route::get('/fyi/disclaimers', [DisclaimersController::class, 'index'])->name('disclaimers');
@@ -122,10 +122,13 @@ Route::get('/files', [AdminFilesController::class, 'index'])->name('files');
 Route::get('/pages', [AdminPagesController::class, 'index'])->name('pages');
 Route::post('/pages/save_default', [AdminPagesController::class, 'createDefault'])->name('save_default_page');
 Route::get('/pages/default_page', [AdminPagesController::class, 'defaultIndex'])->name('default_page');
+Route::get('/pages/edit_default_page', [AdminPagesController::class, 'defaultEdit'])->name('edit_default_page');
 Route::post('/pages/save_internal', [AdminPagesController::class, 'createInternal'])->name('save_internal_page');
 Route::get('/pages/internal_page', [AdminPagesController::class, 'internalIndex'])->name('internal_page');
+Route::get('/pages/edit_internal_page', [AdminPagesController::class, 'internalEdit'])->name('edit_internal_page');
 Route::post('/pages/save_static', [AdminPagesController::class, 'createStatic'])->name('save_static_page');
 Route::get('/pages/static_page', [AdminPagesController::class, 'staticIndex'])->name('static_page');
+Route::get('/pages/edit_static_page', [AdminPagesController::class, 'staticEdit'])->name('edit_static_page');
 
 // Navigations Routes
 Route::get('/navigations', [AdminNavigationsController::class, 'index'])->name('navigations');
