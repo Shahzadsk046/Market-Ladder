@@ -47,6 +47,7 @@ class AdminPagesController extends Controller
     {
         //
     }
+
     public function createDefault(Request $req)
     {
         //
@@ -60,14 +61,67 @@ class AdminPagesController extends Controller
         $page->status = ($req->optionEnabled == "on" ? 1 : 0);
         $page->publish_time = \Carbon\Carbon::parse($req->optionPublishTime)->format('Y-m-d H:i:s') ;
         $page->homepage = ($req->optionHomepage == "on" ? 1 : 0);
-        $page->navigation = ($req->optionNavigation  == "on" ? 1 : 0);
-        $page->exact_url = ($req->optionExacturl  == "on" ? 1 : 0);
+        $page->navigation = ($req->optionNavigation == "on" ? 1 : 0);
+        $page->exact_url = ($req->optionExacturl == "on" ? 1 : 0);
         $page->rules = $req->optionAllowedRules;
         $page->theme = ($req->optionThemeLayout  == "Dark" ? 1 : 0);
-        $page->parent_page = ($req->optionParentPage  == "on" ? 1 : 0);
+        $page->parent_page = ($req->optionParentPage == "on" ? 1 : 0);
         $default_page->block_id = $req->block_id;
         $page->save();
         $default_page->save();
+        return redirect('pages');
+    }
+
+    public function createInternal(Request $req)
+    {
+        //
+        $page = new Page;
+        $internal_page = new InternalPage;
+        $page->title = $req->internalPageTitle;
+        $page->slug = $req->internalPageSlug;
+        $page->page_type = ($req->page_type == "internal_page" ? "Internal Page Type" : ($req->page_type == "static_page" ? "Static Page Type" : "Default Page Type") );
+        $page->meta_title = $req->internalPageMetaTitle;
+        $page->meta_desc = $req->internalPageMetaDesc;
+        $page->status = ($req->optionEnabled == "on" ? 1 : 0);
+        $page->publish_time = \Carbon\Carbon::parse($req->optionPublishTime)->format('Y-m-d H:i:s') ;
+        $page->homepage = ($req->optionHomepage == "on" ? 1 : 0);
+        $page->navigation = ($req->optionNavigation == "on" ? 1 : 0);
+        $page->exact_url = ($req->optionExacturl == "on" ? 1 : 0);
+        $page->rules = $req->optionAllowedRules;
+        $page->theme = ($req->optionThemeLayout  == "Dark" ? 1 : 0);
+        $page->parent_page = ($req->optionParentPage == "on" ? 1 : 0);
+        $internal_page->block_id = $req->block_id;
+        $internal_page->visibility = ($req->displayHeader == "on" ? 1 : 0);
+        $internal_page->file_path = $req->header_bg_image;
+        $internal_page->heading_text = $req->headerHeading;
+        $internal_page->paragraph_text = $req->headerPara;
+        $internal_page->banner = $req->banner;
+        $page->save();
+        $internal_page->save();
+        return redirect('pages');
+    }
+
+    public function createStatic(Request $req)
+    {
+        //
+        $page = new Page;
+        $static_page = new StaticPage;
+        $page->title = $req->staticPageTitle;
+        $page->slug = $req->staticPageSlug;
+        $page->page_type = ($req->page_type == "internal_page" ? "Internal Page Type" : ($req->page_type == "static_page" ? "Static Page Type" : "Default Page Type") );
+        $page->meta_title = $req->staticPageMetaTitle;
+        $page->meta_desc = $req->staticPageMetaDesc;
+        $page->status = ($req->optionEnabled == "on" ? 1 : 0);
+        $page->publish_time = \Carbon\Carbon::parse($req->optionPublishTime)->format('Y-m-d H:i:s') ;
+        $page->homepage = ($req->optionHomepage == "on" ? 1 : 0);
+        $page->navigation = ($req->optionNavigation == "on" ? 1 : 0);
+        $page->exact_url = ($req->optionExacturl == "on" ? 1 : 0);
+        $page->rules = $req->optionAllowedRules;
+        $page->theme = ($req->optionThemeLayout  == "Dark" ? 1 : 0);
+        $page->parent_page = ($req->optionParentPage == "on" ? 1 : 0);
+        $static_page->block_id = $req->block_id;
+        $page->save();
+        $static_page->save();
         return redirect('pages');
     }
 

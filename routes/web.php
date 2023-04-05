@@ -123,9 +123,9 @@ Route::get('/pages', [AdminPagesController::class, 'index'])->name('pages');
 Route::post('/pages/save_default', [AdminPagesController::class, 'createDefault'])->name('save_default_page');
 Route::get('/pages/default_page', [AdminPagesController::class, 'defaultIndex'])->name('default_page');
 Route::post('/pages/save_internal', [AdminPagesController::class, 'createInternal'])->name('save_internal_page');
-Route::get('/pages/internal_page', [InternalPageTypeController::class, 'internalIndex'])->name('internal_page');
+Route::get('/pages/internal_page', [AdminPagesController::class, 'internalIndex'])->name('internal_page');
 Route::post('/pages/save_static', [AdminPagesController::class, 'createStatic'])->name('save_static_page');
-Route::get('/pages/static_page', [StaticPageTypeController::class, 'staticIndex'])->name('static_page');
+Route::get('/pages/static_page', [AdminPagesController::class, 'staticIndex'])->name('static_page');
 
 // Navigations Routes
 Route::get('/navigations', [AdminNavigationsController::class, 'index'])->name('navigations');

@@ -88,7 +88,7 @@
                 </div>
                 <div class="row my-3 py-2">
                     <div class="col-12">
-                        <form action="/save_internal"
+                        <form action="/pages/save_internal"
                               method="post">
                               @csrf
                               <input type="hidden" name="page_type" value="{{Route::current()->getName()}}">
@@ -118,24 +118,24 @@
                                           method="post"> --}}
                                         <div class="form-row my-3">
                                             <div class="mb-3">
-                                                <label for="defaultPageTitle"
+                                                <label for="internalPageTitle"
                                                        class="form-label">Title <span style="color:red">*</span></label>
                                                 <div class="form-text mb-3">Specify a short description name for this page.
                                                 </div>
                                                 <input type="text"
                                                        class="form-control"
-                                                       name="defaultPageTitle"
-                                                       id="defaultPageTitle">
+                                                       name="internalPageTitle"
+                                                       id="internalPageTitle">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="defaultPageSlug"
+                                                <label for="internalPageSlug"
                                                        class="form-label">Slug <span style="color:red">*</span></label>
                                                 <div class="form-text mb-3">The slug is used in building the page's URL.
                                                 </div>
                                                 <input type="text"
                                                        class="form-control"
-                                                       name="defaultPageSlug"
-                                                       id="defaultPageSlug">
+                                                       name="internalPageSlug"
+                                                       id="internalPageSlug">
                                             </div>
                                         </div>
                                         {{-- </form> --}}
@@ -144,28 +144,28 @@
                                 <div id="seo"
                                      class="tab-pane fade">
                                     <div class="col-12 bg-white p-3">
-                                        {{-- <form action="/defaultPage"
+                                        {{-- <form action="/internalPage"
                                           method="post"> --}}
                                         <div class="form-row my-3">
                                             <div class="mb-3">
-                                                <label for="defaultPageMetaTitle"
+                                                <label for="internalPageMetaTitle"
                                                        class="form-label">Meta Title</label>
                                                 <div class="form-text mb-3">Specify the SEO title.
                                                 </div>
                                                 <input type="text"
                                                        class="form-control"
-                                                       name="defaultPageMetaTitle"
-                                                       id="defaultPageMetaTitle">
+                                                       name="internalPageMetaTitle"
+                                                       id="internalPageMetaTitle">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="defaultPageMetaDesc"
+                                                <label for="internalPageMetaDesc"
                                                        class="form-label">Meta Description</label>
                                                 <div class="form-text mb-3">Specify the SEO description.
                                                 </div>
                                                 <input type="text"
                                                        class="form-control"
-                                                       name="defaultPageMetaDesc"
-                                                       id="defaultPageMetaDesc">
+                                                       name="internalPageMetaDesc"
+                                                       id="internalPageMetaDesc">
                                             </div>
                                         </div>
                                         {{-- </form> --}}
@@ -174,7 +174,7 @@
                                 <div id="options"
                                      class="tab-pane fade">
                                     <div class="col-12 bg-white p-3">
-                                        {{-- <form action="/defaultPage"
+                                        {{-- <form action="/internalPage"
                                           method="post"> --}}
                                         <div class="form-row my-3">
                                             <div class="mb-3">
@@ -310,7 +310,7 @@
                                 <h6 class="fw-bolder pt-3">Header Background Image</h6>
                                 <div class="bg-image-btn">
                                     <span class="btn bg-lightblue btn-file">
-                                        Select File<input type="file">
+                                        Select File<input type="file" name="header_bg_image" id="header_bg_image" />
                                     </span>
                                     <button class="btn btns bg-green">Upload</button>
                                     <p class="py-3">No File Selected</p>
