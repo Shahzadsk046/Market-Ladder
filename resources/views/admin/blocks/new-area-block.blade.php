@@ -63,6 +63,17 @@
                                                        id="blockslug">
                                             </div>
                                             <div class="mb-3">
+                                                <label for="blockblockdata"
+                                                       class="form-label">Slug <span style="color:red">*</span></label>
+                                                <div id="emailHelp"
+                                                     class="form-text mb-3">The slug will be used when display blocks with
+                                                    the plugin.</div>
+                                                <input type="text"
+                                                       class="form-control"
+                                                       name="blockblockdata"
+                                                       id="blockblockdata">
+                                            </div>
+                                            <div class="mb-3">
                                                 <label for="blockdesc"
                                                        class="form-label">Description</label>
                                                 <div id="emailHelp"

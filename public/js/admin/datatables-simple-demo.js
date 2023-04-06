@@ -1,13 +1,16 @@
-window.addEventListener('DOMContentLoaded', event => {
+window.addEventListener("DOMContentLoaded", (event) => {
     // Simple-DataTables
     // https://github.com/fiduswriter/Simple-DataTables/wiki
 
-    const datatablesSimple = document.getElementById('example');
+    const datatablesSimple = document.getElementById("example");
     if (datatablesSimple) {
         new simpleDatatables.DataTable(datatablesSimple, {
-            paging: false,
+            // paging: false,
             sortable: false,
-            fixedColumns: false
+            fixedColumns: false,
+            labels: {
+                info: "{rows} results",
+            },
         });
     }
 });

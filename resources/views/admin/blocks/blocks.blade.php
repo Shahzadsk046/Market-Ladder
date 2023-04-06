@@ -36,20 +36,20 @@
                         <form action="/blocks/delete_block"
                               method="post">
                             @csrf
-                        <table id="example"
-                               class="bg-white">
-                            <thead>
-                                <tr>
-                                    <th><input type="checkbox"
-                                               name="all_data"
-                                               id="all_data"></th>
-                                    <th>Name</th>
-                                    <th>Slug</th>
-                                    <th>Description</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                            <table id="example"
+                                   class="bg-white">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox"
+                                                   name="all_data"
+                                                   id="all_data"></th>
+                                        <th>Name</th>
+                                        <th>Slug</th>
+                                        <th>Description</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                                     @foreach ($blocks as $block)
                                         <tr>
                                             <td><input type="checkbox"
@@ -63,7 +63,7 @@
                                                 <a href="blocks/edit/{{ $block['id'] }}"><button type="button"
                                                             class="btn btns w-fx bg-red"><i class="fas fa-pen"></i>
                                                         Edit</button></a>
-                                                <a href="blocks/view/{{ $block['slug'] }}"><button type="button"
+                                                <a href="blocks/view/{{ $block['id'] }}"><button type="button"
                                                             class="btn btns w-fx bg-purple"><i
                                                            class="fas fa-wand-magic-sparkles"></i>
                                                         Blocks</button></a>
@@ -71,8 +71,8 @@
                                         </tr>
                                     @endforeach
                                     <tr>
-                                        <td><button type="submit" class="btn btns bg-pink"
-                                            style="width: 100px"><i class="fas fa-trash"></i> Delete</button></td>
+                                        <td><button class="btn btns bg-pink"
+                                                    style="width: 100px"><i class="fas fa-trash"></i> Delete</button></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>

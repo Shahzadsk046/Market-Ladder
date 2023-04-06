@@ -47,6 +47,18 @@
                                                            value="{{ $item['slug'] }}">
                                                 </div>
                                                 <div class="mb-3">
+                                                    <label for="blockBlockdata"
+                                                           class="form-label">Block <span style="color:red">*</span></label>
+                                                    <div id="emailHelp"
+                                                         class="form-text mb-3">The slug will be used when display blocks
+                                                        with the plugin.</div>
+                                                    <input type="text"
+                                                           class="form-control"
+                                                           name="blockBlockdata"
+                                                           id="blockBlockdata"
+                                                           value="{{ $item['blockdata'] }}">
+                                                </div>
+                                                <div class="mb-3">
                                                     <label for="blockDesc"
                                                            class="form-label">Description</label>
                                                     <div id="emailHelp"

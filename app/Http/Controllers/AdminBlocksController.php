@@ -11,6 +11,7 @@ class AdminBlocksController extends Controller
     /**
      * Display a listing of the resource.
      */
+    // public $isDisabled = true;
     public function index()
     {
         $blocks = Block::all();
@@ -27,6 +28,7 @@ class AdminBlocksController extends Controller
         $block = new Block;
         $block->name = $req->blockname;
         $block->slug = $req->blockslug;
+        $block->blockdata = $req->blockblockdata;
         $block->description = $req->blockdesc;
         $block->save();
         return redirect('blocks');
@@ -44,10 +46,11 @@ class AdminBlocksController extends Controller
      * Display the specified resource.
      */
     // public function show(string $id)
-    public function show()
+    public function show($id)
     {
         //
-        return view('admin.blocks.view-blocks');
+        $blocks = Block::where('id', $id)->get();
+        return view('admin.blocks.view-blocks', ['blocks' => $blocks]);
     }
 
     /**
@@ -55,7 +58,7 @@ class AdminBlocksController extends Controller
      */
     public function edit($id)
     {
-        $blocks = Block::where('id',$id)->get();
+        $blocks = Block::where('id', $id)->get();
         return view('admin.blocks.edit-blocks', ['blocks' => $blocks]);
     }
 
@@ -66,13 +69,12 @@ class AdminBlocksController extends Controller
     {
         //
         $block = Block::find($request->id);
-        // $block = new Block;
         $block->name = $request->blockName;
         $block->slug = $request->blockSlug;
+        $block->blockdata = $request->blockBlockdata;
         $block->description = $request->blockDesc;
         $block->save();
         return redirect('blocks');
-
     }
 
     /**
@@ -82,23 +84,8 @@ class AdminBlocksController extends Controller
     {
         //
         $ids = $req->ids;
+
         Block::whereIn('id', $ids)->delete();
         return redirect('blocks');
-        // DB::table("blocks")->delete($id);
-        // return response()->json(['success'=>"Block Deleted successfully.", 'tr'=>'tr_'.$id]);
     }
-
-    public function destroyMany(array $ids)
-    {
-        Block::destroy($ids);
-        return redirect('blocks');
-        // redirect or whatever...
-    }
-
-    // public function deleteAll(Request $request)
-    // {
-    //     $ids = $request->ids;
-    //     DB::table("blocks")->whereIn('id',explode(",",$ids))->delete();
-    //     return response()->json(['success'=>"Blocks Deleted successfully."]);
-    // }
 }
